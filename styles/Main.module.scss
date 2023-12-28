@@ -1,0 +1,2056 @@
+@import './Variable.module';
+@import "./Mixin.module";
+
+// 00000000000............{{{{{{{{{{{{{{{{{{{Arrowimg}}}}}}}}}}}}}}}}}}}
+.zeroarrowdiv {
+  bottom: 25px;
+  position: fixed;
+  right: 30px;
+  z-index: 99;
+
+  .zeroarrowdiv2 {
+    background-color: hsla(31, 48%, 60%, .7);
+    background-position: 0;
+    background-size: 200%, 1px;
+    border: 2px solid #ca9c6a;
+    border-radius: 50%;
+    color: $white-color;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+    @include flexcenter;
+  }
+}
+
+// ------------------------------------------
+// HOMEPAGE
+// ---------------------------------------
+// 11111111111........{{{{{{{{{{{{bg-img}}}}}}}}}}}}
+.bgimg {
+  background-image: url("./../public/mainimg.png");
+  width: 100%;
+  min-height: 900px;
+  @include flexcenter;
+}
+
+// 22222222222222.............{{{{{{{{{{{    navbar      }}}}}}}}}}}
+.headerdiv {
+  background: $text-darkcolor;
+  border-left: 7px solid $text-color;
+  display: flex;
+  padding: 0px 20px;
+
+  .navlinkdiv {
+    @include commoncode(1px, 30px, uppercase, $white-color, 500, 14px);
+    padding: 30px 12px;
+    border-top: 7px solid #ca9c6a49;
+    transition: all .5s ease;
+    margin: 0px 20px;
+
+    &:focus {
+      background-color: #65646437;
+      color: $white-color;
+      border-top: 7px solid $text-color;
+    }
+
+    &:hover {
+      background-color: #65646437;
+      color: $white-color;
+      border-top: 7px solid $text-color;
+    }
+
+  }
+}
+
+// 33333333333333333............{{{{{{{{{{twoimg}}}}}}}}}}
+.twoimg {
+  background-image: url("./../public/mainimg2.png");
+  @include background(contain);
+  @include widthheigth(100%, 100%);
+  padding-top: 100px;
+
+  .im1 {
+    background-image: url("./../public/im1.png");
+    @include background(contain);
+    @include widthheigth(100%, 600px);
+    position: relative;
+
+    .im2 {
+      position: absolute;
+      background-image: url("./../public/im2.png");
+      @include background(contain);
+      @include widthheigth(80%, 520px);
+    }
+
+    .im3 {
+      position: absolute;
+      display: flex;
+      background-color: $white-color;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      h1 {
+        color: $text-color;
+        margin-right: 10px;
+        font-size: 70px;
+      }
+
+      h4 {
+        @include flexcenter;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// 44444444444444................{{{{{{{{{{{{threeimg}}}}}}}}}}}}}
+.threeimg {
+  background-image: url("./../public/mainimg3.jpg");
+  @include background(cover);
+  @include flexcenter;
+
+  h1 {
+    font-size: 60px;
+    -webkit-text-stroke: 1px #e1e1e1;
+    color: transparent;
+  }
+
+  h2 {
+    @include threeimage(#1e1e1e, 40px, 600, 25px);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      color: $text-color
+    }
+  }
+
+  h6 {
+    @include threeimage($text-lightcolor, 20px, 100, 15px);
+  }
+}
+// 5555555555555...........{{{{{{{{{{{{{{{{{{{{{videoimage}}}}}}}}}}}}}}}}}}}}}
+
+.videoimg {
+  background-image: url("./../public/video1image.png");
+  @include background(contain);
+  padding-top: 100px;
+
+  .video {
+    background-color: $text-color;
+    position: relative;
+
+    .videosub {
+      background-image: url("./../public/chair.png");
+      @include background(cover);
+      position: absolute;
+
+      .video_play {
+        border-radius: 50%;
+        position: absolute;
+        background: rgba(0, 0, 0, .1);
+        color: $text-color;
+        display: inline-block;
+        font-size: 27px;
+        height: 76px;
+        left: 50%;
+        line-height: 76px;
+        text-align: center;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1.25);
+        transform: translate(-50%, -50%) scale(1.25);
+        width: 76px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          height: 83px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+// 666666666666666.............. {{{{{{{{{{{{{lightbgsec}}}}}}}}}}}}}
+.bgcolor {
+  background-color: #fffbf3;
+}
+
+// 7777777777777777............{{{{{{{{{{{{{{{{{{slidersec}}}}}}}}}}}}}}}}}}
+.slidermain {
+  background-color: #fffbf3;
+  @include widthheigth(100%, 200px);
+  @include flexcenter;
+
+  button:not(:disabled),
+  [type=button]:not(:disabled),
+  [type=reset]:not(:disabled),
+  [type=submit]:not(:disabled) {
+    cursor: pointer;
+    display: none !important;
+  }
+
+  .immm {
+    padding: 400px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+}
+
+// 88888888888888888888...........{{{{{{{{{{{{{{onlyimage}}}}}}}}}}}}}}
+.firstimage {
+  background-image: url("./../public/onlyimage1.png");
+  @include background(cover);
+  @include widthheigth(100%, 100%);
+  min-height: 800px;
+}
+
+.secondimage {
+  background-image: url("./../public/onlyimage2.png");
+  @include background(cover);
+  @include widthheigth(100%, 100%);
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    -webkit-text-stroke: 1px #e1e1e1;
+    color: transparent;
+  }
+
+  h2 {
+    color: $white-color;
+    font-weight: 600;
+  }
+}
+
+// 99999999999999999999..............{{{{{{{{{{{{{{{{{{{{{Siximagesec}}}}}}}}}}}}}}}}}}}}}
+
+.sixmaindiv {
+  text-align: center;
+  margin: 100px 0px;
+
+  h1 {
+    color: $text-darkcolor;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: Oswald, sans-serif;
+
+    span {
+      color: $text-color;
+      font-weight: 300;
+    }
+  }
+
+  h6 {
+    font-size: 15px;
+    color: $text-lightcolor;
+    font-family: Oswald, sans-serif;
+  }
+}
+
+.threediv {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .subthreediv {
+    height: 51%;
+  }
+
+  .sssubthreediv {
+    @include subthreedivmid(44%);
+
+
+    h1 {
+      @include sixbgh1code;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    h5 {
+      @include sixbgh5code;
+    }
+
+    h6 {
+      @include sixbgh6code;
+    }
+  }
+
+  .subthreedivmid {
+    @include subthreedivmid(44%);
+
+    h1 {
+      @include sixbgh1code;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    h5 {
+      @include sixbgh5code;
+    }
+
+    h6 {
+      @include sixbgh6code;
+    }
+  }
+
+  .sssubthreedivmid {
+    height: 51%;
+  }
+}
+
+// 10.10.10.10.10.10.10.10...........{{{{{{{{{{{{{{{numbercounting}}}}}}}}}}}}}}}
+.posi1 {
+  position: relative;
+
+  .posi2 {
+    position: absolute;
+    @include topleft(35%, 45%);
+
+    h4 {
+      @include numberposi2(0px, $text-color, 21px);
+    }
+
+    h6 {
+      @include numberposi2(7px, $text-lightcolor, 17px);
+    }
+  }
+
+  .posi3 {
+    position: absolute;
+    @include topleft(35%, 30%);
+
+    h4 {
+      @include numberposi2(0px, $text-color, 21px);
+    }
+
+    h6 {
+      @include numberposi2(7px, $text-lightcolor, 17px);
+    }
+  }
+
+  .numberdiv {
+    @include numberdiv;
+
+    span {
+      @include numberdivspan(34px);
+    }
+  }
+
+  .numberdiv1 {
+    @include numberdiv;
+
+    span {
+      @include numberdivspan(25px);
+    }
+  }
+}
+
+// 11.11.11.11.11.11.11.11..... {{{{{{{{{{{{{accordion}}}}}}}}}}}}}
+
+.accorset {
+  padding: 60px 22px;
+
+  h6 {
+    color: $text-color;
+    line-height: 40px;
+    letter-spacing: 7px;
+    font-family: Oswald, sans-serif;
+    font-size: 13px;
+  }
+
+  h1 {
+    line-height: 60px;
+    letter-spacing: 7px;
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
+
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+// 12.12.12.12.12.12.12.........  {{{{{{{{{{{{{{formbgimage}}}}}}}}}}}}}}
+.formimgbg {
+  background-image: url("./../public/formbgimg.png");
+  @include background(cover);
+  @include widthheigth(100%, 800px);
+  padding-top: 330px;
+
+  h1 {
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  button {
+    background-color: $text-color;
+    color: $white-color;
+    padding: 18px 60px;
+    border: none;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $text-darkcolor;
+    }
+  }
+}
+
+// 13.13.13.13.13.13.13.............{{{{{{{{{Footer}}}}}}}}}
+.footermain {
+  background-image: url("./../public/footerimg.png");
+  @include background(cover);
+  margin-top: 450px;
+
+  .positionset {
+    position: relative;
+
+    .textcolordiv {
+      background-color: $text-color;
+      padding: 50px;
+      position: absolute;
+      top: -130px;
+      width: 100%;
+
+      h6 {
+        @include commoncode(5px, 40px, uppercase, $white-color, 400, 17px);
+        font-family: Oswald, sans-serif;
+      }
+
+      h1 {
+        @include commoncode(5px, 50px, capitalize, $white-color, bold, 50px);
+        font-family: Oswald, sans-serif;
+      }
+
+      .input {
+        color: $white-color !important;
+
+        input {
+          background: #c19666;
+          outline: 1px solid #d2b08c;
+          outline-offset: -1px;
+          border: none !important;
+        }
+
+        button {
+          background: $text-darkcolor;
+          font-weight: 300;
+          color: $white-color;
+          letter-spacing: 5px;
+        }
+      }
+    }
+
+    .setposidiv {
+      position: absolute;
+      width: 100%;
+      color: $white-color;
+      font-family: Oswald, sans-serif;
+
+      img {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      h4 {
+        @include setposidiv(#fff, 25px, 22px, uppercase)
+      }
+
+      h5 {
+        @include setposidiv(#fff, 20px, 15px, capitalize)
+      }
+
+      h6 {
+        @include setposidiv($text-color, 20px, 15px, capitalize)
+      }
+    }
+  }
+}
+
+.bottomfooter {
+  h6 {
+    color: #939ca5;
+    margin: 20px 0;
+    font-family: Oswald, sans-serif;
+
+    span {
+      color: $text-color;
+    }
+  }
+
+  a {
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      color: $text-color;
+
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------------RESPONSIVE
+@media only screen and (max-width: 575.98px) {
+  .bgimg {
+    .text1 {
+      @include textcode(35px, $white-color, 700, 1px);
+    }
+
+    .text2 {
+      @include textcode(35px, $text-color, 600, 1px);
+    }
+  }
+
+  .im2 {
+    @include topleft(50%, 20%);
+  }
+
+  .im3 {
+    @include topleft(20%, 30%);
+    padding: 10px 20px;
+  }
+
+  .twoimg {
+    .settingtext {
+      width: 100%;
+      padding: 20px 10px;
+
+      h6 {
+        @include commoncode(5px, 34px, uppercase, $text-color, 100, 16px);
+        margin-top: 100px;
+      }
+
+      h1 {
+        @include commoncode(5px, 40px, uppercase, $text-darkcolor, 600, 30px);
+      }
+
+      h2 {
+        @include commoncode(5px, 40px, uppercase, $text-color, 600, 30px);
+      }
+
+      h3 {
+        @include commoncode(5px, 40px, uppercase, $text-color, 300, 30px);
+      }
+
+      h5 {
+        @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 17px);
+      }
+    }
+  }
+
+  .threeimg {
+    @include widthheigth(100%, 1000px);
+  }
+
+  .videoimg {
+    @include widthheigth(100%, 1px);
+    margin-bottom: 200px;
+
+    .video {
+      @include widthheigth(100%, 200px);
+
+      .videosub {
+        @include widthheigth(100%, 220px);
+        top: 20px;
+        right: 20px;
+
+      }
+    }
+  }
+
+  .secondimage {
+    h1 {
+      font-size: 40px;
+      padding-left: 25px;
+    }
+
+    h2 {
+      padding-left: 20px;
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+
+  .accorset {
+    width: 100%;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .bgcolor {
+    @include widthheigth(100%, 30px);
+  }
+
+  .footermain {
+    @include widthheigth(100%, 1290px);
+
+    .positionset {
+      .textcolordiv {
+        .input {
+          input {
+            padding: 15px 0px;
+          }
+
+          button {
+            padding: 12px 29px;
+          }
+        }
+      }
+
+      .setposidiv {
+        top: 400px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 575.98px) {
+  .bgimg {
+    .text1 {
+      @include textcode(55px, $white-color, 700, 1px);
+    }
+
+    .text2 {
+      @include textcode(60px, $text-color, 400, 2px);
+    }
+  }
+
+  .im2 {
+    @include topleft(50%, 20%);
+  }
+
+  .im3 {
+    @include topleft(20%, 40%);
+    padding: 10px 20px;
+  }
+
+  .threeimg {
+    padding-top: 300px;
+  }
+
+  .accorset {
+    width: 100%;
+  }
+
+  .formimgbg {
+    .formbgsetting {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 767.98px) {
+  .bgimg {
+    .text1 {
+      @include textcode(70px, $white-color, 700, 1px);
+    }
+
+    .text2 {
+      @include textcode(70px, $text-color, 400, 2px);
+    }
+  }
+
+  .im2 {
+    @include topleft(50%, 30%);
+  }
+
+  .im3 {
+    @include topleft(20%, 60%);
+    padding: 10px 20px;
+  }
+
+  .twoimg {
+    .settingtext {
+      width: 95%;
+      margin: 0 auto;
+      padding: 20px 10px;
+
+      h6 {
+        @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+        margin-top: 200px;
+      }
+
+      h1 {
+        @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 47px);
+      }
+
+      h2 {
+        @include commoncode(10px, 60px, uppercase, $text-color, 600, 47px);
+      }
+
+      h3 {
+        @include commoncode(10px, 60px, uppercase, $text-color, 300, 47px);
+      }
+
+      h5 {
+        @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 17px);
+      }
+    }
+  }
+
+  .threeimg {
+    padding-top: 100px;
+    @include widthheigth(100%, 800px);
+  }
+
+  .videoimg {
+    @include widthheigth(100%, 1px);
+    margin-bottom: 300px;
+
+    .video {
+      @include widthheigth(100%, 400px);
+
+      .videosub {
+        @include widthheigth(100%, 420px);
+        top: 30px;
+        right: 30px;
+
+      }
+    }
+  }
+
+  .secondimage {
+    h3 {
+      position: relative;
+      padding-left: 160px;
+      text-align: end;
+
+      &::before {
+        content: "";
+        position: absolute;
+        @include topleft(40px, 70px);
+        width: 40%;
+        height: 3px;
+        background-color: $white-color;
+      }
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      padding-left: 60px;
+      font-size: 60px;
+      line-height: 80px;
+    }
+  }
+
+  .accorset {
+    width: 100%;
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .bgcolor {
+    @include widthheigth(100%, 200px);
+  }
+
+  .formimgbg {
+    .formbgsetting {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+  }
+
+  .footermain {
+    @include widthheigth(100%, 1000px);
+
+    .positionset {
+      .textcolordiv {
+        .input {
+          input {
+            padding: 15px 40px;
+          }
+
+          button {
+            padding: 12px 30px;
+          }
+        }
+      }
+
+      .setposidiv {
+        top: 270px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 991.98px) {
+  .im2 {
+    @include topleft(50%, 40%);
+  }
+
+  .twoimg {
+    .settingtext {
+      width: 85%;
+      margin: 0 auto;
+      padding: 20px 10px;
+
+      h6 {
+        @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+        margin-top: 200px;
+      }
+
+      h1 {
+        @include commoncode(5px, 55px, uppercase, $text-darkcolor, 600, 43px);
+      }
+
+      h2 {
+        @include commoncode(5px, 55px, uppercase, $text-color, 600, 43px);
+      }
+
+      h3 {
+        @include commoncode(5px, 55px, uppercase, $text-color, 300, 43px);
+      }
+
+      h5 {
+        @include commoncode(2px, 34px, uppercase, $text-darkcolor, 100, 15px);
+      }
+    }
+  }
+
+  .threeimg {
+    padding-top: 70px;
+    @include widthheigth(100%, 500px);
+  }
+
+  .videoimg {
+    @include widthheigth(100%, 1px);
+    margin-bottom: 300px;
+
+    .video {
+      @include widthheigth(100%, 640px);
+
+      .videosub {
+        @include widthheigth(100%, 660px);
+        top: 40px;
+        right: 40px;
+      }
+    }
+  }
+
+  .accorset {
+    width: 60%;
+  }
+
+  .footermain {
+    @include widthheigth(100%, 800px);
+
+    .positionset {
+      .textcolordiv {
+        .input {
+          input {
+            padding: 15px 40px;
+          }
+
+          button {
+            padding: 12px 30px;
+          }
+        }
+      }
+
+      .setposidiv {
+        top: 270px;
+      }
+    }
+  }
+
+  .bgcolor {
+    @include widthheigth(100%, 400px);
+  }
+}
+
+// ------------------------------------------
+// ABOUTPAGE
+// ---------------------------------------
+
+// 11111111111..............{{{{{{{{{{{Abimg}}}}}}}}}}}
+.aboutbgimg {
+  background-image: url("./../public/aboutbgimage.png");
+  @include background(cover);
+  width: 100%;
+  min-height: 500px;
+
+  .aboutbgimg2 {
+    min-height: 500px;
+    position: relative;
+    @include flexcenter;
+    flex-direction: column;
+
+    .aboutbutton {
+      position: absolute;
+      bottom: 0px;
+      background-color: $text-color;
+      border: none;
+      padding: 20px 40px;
+    }
+  }
+}
+
+// 2222222222222222.............{{{{{{{{{{{Simplesec}}}}}}}}}}}
+.simplesec {
+  @include widthheigth(60%, 100px);
+  background-color: #faf7f0;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: -65px;
+    left: 80px;
+    -webkit-text-stroke: 1px #e1e1e1;
+    @include commoncode(12px, 140px, uppercase, transparent, bold, 107px);
+  }
+}
+
+// 33333333...........{{{{{{{{{{Onebigimgsec}}}}}}}}}}
+.onebg {
+  .onebgimg {
+    background-image: url("./../public/im1.png");
+    @include background(cover);
+    position: relative;
+
+    .onesettingtext {
+      position: absolute;
+      margin: 0 auto;
+    }
+
+    .oneim3 {
+      position: absolute;
+      top: 30px;
+      left: 100px;
+      display: flex;
+      background-color: $white-color;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 15px;
+
+      h1 {
+        color: $text-color;
+        margin-right: 10px;
+        font-size: 70px;
+      }
+
+      h4 {
+        @include flexcenter;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// 4444444444...........{{{{{{{{{{{{{Numbercountingsec}}}}}}}}}}}}}
+.aboutnumber {
+  background-color: #c19666;
+
+  .aboutposi1 {
+    position: relative;
+
+    .aboutposi2 {
+      position: absolute;
+      @include topleft(35%, 45%);
+
+      h4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      h6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+
+    .aboutposi3 {
+      position: absolute;
+      @include topleft(35%, 30%);
+
+      h4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      h6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+
+    .aboutnumberdiv {
+      @include numberdiv;
+
+      span {
+        @include numberdivspan(34px);
+      }
+    }
+
+    .aboutnumberdiv1 {
+      @include numberdiv;
+
+      span {
+        @include numberdivspan(25px);
+      }
+    }
+  }
+}
+
+// 55555555............{{{{{{{{{Blacksec}}}}}}}}}
+.aboutblackbgimg {
+  background-image: url("./../public/aboutblackbg.png");
+  @include background(cover);
+  width: 100%;
+
+  .blackmain {
+    text-align: center;
+    padding-top: 100px;
+
+    h1 {
+      color: $white-color;
+      font-weight: bold;
+      font-size: 45px;
+      font-family: Oswald, sans-serif;
+      letter-spacing: 5px;
+
+      span {
+        color: $text-color;
+        font-weight: 300;
+      }
+    }
+
+    h6 {
+      font-size: 15px;
+      color: $white-color;
+      font-family: Oswald, sans-serif;
+      line-height: 40px;
+      letter-spacing: 7px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .blackthreeimg {
+    background-color: $white-color;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    h3 {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: .5s;
+      cursor: pointer;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    h6 {
+      font-size: 13px;
+    }
+  }
+}
+
+// 666666666666.............{{{{{{{{Aboutvideosec}}}}}}}}
+.aboutvideoimg {
+  background-image: url("./../public/video1image.png");
+  @include background(contain);
+  width: 100%;
+  height: 400px;
+
+  .aboutvideo {
+    background-color: $text-color;
+    position: relative;
+    width: 100%;
+    height: 600px;
+
+    .aboutvideosub {
+      background-image: url("./../public/chair.png");
+      @include background(cover);
+      position: absolute;
+      top: 8%;
+      right: 4%;
+      width: 100%;
+      height: 100%;
+
+      .aboutvideo_play {
+        border-radius: 50%;
+        position: absolute;
+        background: rgba(0, 0, 0, .1);
+        color: $text-color;
+        display: inline-block;
+        font-size: 27px;
+        height: 76px;
+        left: 50%;
+        line-height: 76px;
+        text-align: center;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1.25);
+        transform: translate(-50%, -50%) scale(1.25);
+        width: 76px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          height: 83px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------------------------  RESPONSIVE
+@media only screen and (max-width: 575.98px) {
+  .aboutbgimg2 {
+    .abouttext1 {
+      @include commoncode(5px, 60px, uppercase, $white-color, 600, 40px);
+    }
+
+    .abouttext2 {
+      @include commoncode(9px, 60px, uppercase, $white-color, 300, 14px);
+    }
+
+    .aboutbutton {
+      @include commoncode(5px, 10px, uppercase, $white-color, 300, 14px);
+    }
+  }
+
+
+  .onebg {
+    @include widthheigth(100%, 600px);
+
+    .onebgimg {
+      @include widthheigth(100%, 100%);
+
+      .onesettingtext {
+        top: 650px;
+        padding: 20px 10px;
+
+        h6 {
+          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+          margin-top: 20px;
+        }
+
+        h1 {
+          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 35px);
+        }
+
+        h2 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 600, 35px);
+        }
+
+        h3 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 300, 35px);
+        }
+
+        h5 {
+          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
+        }
+      }
+    }
+  }
+
+  .aboutnumber {
+    margin-top: 700px;
+  }
+
+  .aboutvideoimg {
+    padding-top: 180px;
+    margin-bottom: 700px;
+  }
+
+  .aboutblackbgimg {
+    height: 1800px;
+  }
+}
+
+@media only screen and (min-width: 767.98px) {
+  .aboutbgimg2 {
+    .abouttext1 {
+      @include commoncode(5px, 70px, uppercase, $white-color, 600, 70px);
+    }
+
+    .abouttext2 {
+      @include commoncode(9px, 60px, uppercase, $white-color, 300, 14px);
+    }
+
+    .aboutbutton {
+      right: 0px;
+      @include commoncode(5px, 10px, uppercase, $white-color, 300, 14px);
+    }
+  }
+
+  .onebg {
+    @include widthheigth(100%, 600px);
+
+    .onebgimg {
+      @include widthheigth(100%, 100%);
+
+      .onesettingtext {
+        top: 600px;
+        padding: 20px 10px;
+
+        h6 {
+          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+          margin-top: 20px;
+        }
+
+        h1 {
+          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 40px);
+        }
+
+        h2 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 600, 40px);
+        }
+
+        h3 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 300, 40px);
+        }
+
+        h5 {
+          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
+        }
+      }
+    }
+  }
+
+  .aboutnumber {
+    margin-top: 600px;
+  }
+
+  .aboutvideoimg {
+    padding-top: 200px;
+    margin-bottom: 700px;
+
+  }
+
+  .aboutblackbgimg {
+    height: 1300px;
+  }
+}
+
+@media only screen and (min-width: 991.98px) {
+  .onebg {
+    @include widthheigth(100%, 600px);
+
+    .onebgimg {
+      @include widthheigth(60%, 100%);
+
+      .onesettingtext {
+        top: 0;
+        right: -600px;
+
+        h6 {
+          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+          margin-top: 20px;
+        }
+
+        h1 {
+          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 40px);
+        }
+
+        h2 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 600, 40px);
+        }
+
+        h3 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 300, 40px);
+        }
+
+        h5 {
+          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
+        }
+      }
+    }
+  }
+
+  .aboutnumber {
+    margin-top: 0px;
+  }
+
+  .aboutvideoimg {
+    padding-top: 300px;
+    margin-bottom: 850px;
+
+  }
+
+  .aboutblackbgimg {
+    height: 800px;
+  }
+}
+
+// ------------------------------------------
+// PROJECTPAGE
+// ---------------------------------------
+// 2222222222222222.............Pdouble
+.Psixmainddiv {
+  text-align: center;
+  margin: 100px 0px;
+
+  h1 {
+    color: $text-darkcolor;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: Oswald, sans-serif;
+
+    span {
+      color: $text-color;
+      font-weight: 300;
+    }
+  }
+
+  h6 {
+    font-size: 15px;
+    color: $text-lightcolor;
+    font-family: Oswald, sans-serif;
+  }
+}
+
+.Pthreediv {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .Psubthreediv {
+    @include widthheigth(100%, 51%);
+  }
+
+  .Psssubthreediv {
+    @include subthreedivmid(44%);
+
+
+    h1 {
+      @include sixbgh1code;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    h5 {
+      @include sixbgh5code;
+    }
+
+    h6 {
+      @include sixbgh6code;
+    }
+  }
+
+  .Psubthreedivmid {
+    @include subthreedivmid(44%);
+
+    h1 {
+      @include sixbgh1code;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    h5 {
+      @include sixbgh5code;
+    }
+
+    h6 {
+      @include sixbgh6code;
+    }
+  }
+
+  .Psssubthreedivmid {
+    @include widthheigth(100%, 51%);
+  }
+
+  // next 3 image
+  .Psubthreediv2 {
+    @include widthheigth(100%, 47%);
+  }
+
+  .Psssubthreediv2 {
+    @include subthreedivmid(48%);
+
+
+    h1 {
+      @include sixbgh1code;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    h5 {
+      @include sixbgh5code;
+    }
+
+    h6 {
+      @include sixbgh6code;
+    }
+  }
+
+  .Psubthreedivmid2 {
+    @include subthreedivmid(48%);
+
+    h1 {
+      @include sixbgh1code;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    h5 {
+      @include sixbgh5code;
+    }
+
+    h6 {
+      @include sixbgh6code;
+    }
+  }
+
+  .Psssubthreedivmid2 {
+    @include widthheigth(100%, 47%);
+  }
+}
+
+// ------------------------------------------
+// SERVICEPAGE
+// ---------------------------------------
+
+// 22222222222222222...................
+.saccormaindiv {
+
+  .saccorimage {
+    background-image: url("./../public/serviceacc1img.png");
+    @include background(cover);
+    position: relative;
+
+    .saccorimage2 {
+      position: absolute;
+      background-image: url("./../public/serviceacc2img.png");
+      @include background(cover);
+      @include widthheigth(100%, 80vh);
+    }
+
+    .saccorimage3 {
+      position: absolute;
+
+      h6 {
+        @include threeimage($text-color, 40px, 100, 13px);
+        letter-spacing: 7px;
+      }
+
+      h1 {
+        span {
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
+
+// 33333333333333....................
+.Sthreeimg {
+  background-image: url("./../public/mainimg3.jpg");
+  @include background(cover);
+  @include flexcenter;
+
+  h1 {
+    font-size: 60px;
+    -webkit-text-stroke: 1px #e1e1e1;
+    color: transparent;
+  }
+
+  h2 {
+    @include threeimage($text-darkcolor, 40px, 600, 25px);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-color
+    }
+  }
+
+  h6 {
+    @include threeimage($text-lightcolor, 20px, 100, 15px);
+  }
+}
+
+// --------------------------------------------------------------------  RESPONSIVE
+@media only screen and (max-width: 575.98px) {
+  .saccormaindiv {
+    @include widthheigth(85%, 100vh);
+    padding-top: 150px;
+
+
+    .saccorimage {
+      @include widthheigth(100%, 80vh);
+      margin-left: 15%;
+
+      .saccorimage2 {
+        @include topleft(20%, -15%);
+      }
+
+      .saccorimage3 {
+        @include topleft(120%, 0%);
+        padding: 60px 0px 60px 0px;
+
+        h1 {
+          @include threeimage($text-color, 60px, bold, 30px);
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+
+  .Sthreeimg {
+    @include widthheigth(100%, 2160px);
+    margin-top: 760px
+  }
+}
+
+@media only screen and (min-width: 767.98px) {
+  .saccormaindiv {
+    @include widthheigth(85%, 100vh);
+    padding-top: 150px;
+
+    .saccorimage {
+      @include widthheigth(100%, 80vh);
+      margin-left: 15%;
+
+      .saccorimage2 {
+        @include topleft(20%, -18%);
+      }
+
+      .saccorimage3 {
+        @include topleft(120%, 0%);
+        padding: 60px 0px 60px 0px;
+
+        h1 {
+          @include threeimage($text-darkcolor, 60px, bold, 30px);
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+
+  .Sthreeimg {
+    @include widthheigth(100%, 1100px);
+    margin-top: 650px
+  }
+}
+
+@media only screen and (min-width: 991.98px) {
+  .saccormaindiv {
+    @include widthheigth(50%, 100vh);
+    padding-top: 150px;
+
+
+    .saccorimage {
+      @include widthheigth(100%, 80vh);
+      margin-left: 15%;
+
+      .saccorimage2 {
+        @include topleft(20%, -18%);
+      }
+
+      .saccorimage3 {
+        @include topleft(0%, 110%);
+
+        h1 {
+          @include threeimage($text-darkcolor, 60px, bold, 40px);
+          letter-spacing: 7px;
+        }
+      }
+    }
+  }
+
+  .Sthreeimg {
+    @include widthheigth(100%, 750px);
+    margin-top: 75px;
+    padding-top: 150px
+  }
+}
+
+// ------------------------------------------
+// BLOGPAGE
+// ----------------------------------------
+// 22222222222222222.................
+.Bmaindiv {
+  margin-top: 150px;
+
+  h2 {
+    color: $text-darkcolor;
+    padding: 20px 0px;
+    font-family: Oswald, sans-serif;
+  }
+
+  div {
+    h6 {
+      color: $text-lightcolor;
+      font-family: Oswald, sans-serif;
+      line-height: 20px;
+    }
+  }
+
+  p {
+    padding-top: 20px;
+    color: $text-lightcolor;
+    font-family: Oswald, sans-serif;
+  }
+
+  a {
+    color: $text-color;
+    letter-spacing: 7px;
+  }
+
+  h1 {
+    color: $text-darkcolor;
+    font-weight: 700;
+    padding: 30px 0px;
+    font-family: Oswald, sans-serif;
+  }
+
+  div {
+    a {
+      h5 {
+        @include threeimage($text-darkcolor, 40px, 500, 19px);
+        letter-spacing: 0px;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  input {
+    border: 2px solid #e1e1e1;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+  }
+
+  button {
+    letter-spacing: 3px;
+    min-width: 130px;
+    padding: 12px;
+    background: $text-color;
+    border: none;
+    color: $white-color;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $text-darkcolor;
+    }
+  }
+}
+
+// ------------------------------------------
+// CONTACTUSPAGE
+// ---------------------------------------
+// 333333333333..............
+.Cthreemaindiv {
+  position: relative;
+  top: -90px;
+
+  .Cthreediv {
+    background: #fff;
+    border: 1px solid #e0e4ec;
+    -webkit-clip-path: polygon(50% 0, 100% 25px, 100% 100%, 0 100%, 0 25px);
+    clip-path: polygon(50% 0, 100% 25px, 100% 100%, 0 100%, 0 25px);
+    margin-bottom: 30px;
+    padding: 40px 65px 55px;
+    @include flexcenter;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    h6 {
+      color: $text-lightcolor;
+      font-family: Oswald, sans-serif;
+    }
+  }
+}
+
+
+// 4444444444...................
+.Cformimgbg {
+  @include widthheigth(100%, 500px);
+
+  h1 {
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  button {
+    background-color: $text-color;
+    color: $white-color;
+    padding: 18px 60px;
+    border: none;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $text-darkcolor;
+    }
+
+  }
+}
+
+// ------------------------------------------
+// DESIGN & PLANNING
+// CUSTOM SOLUTIONS
+// FURNITURE & DECOR
+// ----------------------------------------
+.Dpdivmain {
+  padding-top: 150px;
+
+  h2 {
+    color: $text-darkcolor;
+    padding: 20px 0px;
+    font-family: Oswald, sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+  }
+
+  p {
+    color: $text-lightcolor;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  div {
+    a {
+      background-color: #f5d4b093;
+      border-radius: 50%;
+      @include widthheigth(25px, 25px);
+      color: #c19666 !important;
+      @include flexcenter;
+    }
+
+    h6 {
+      color: $text-lightcolor;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+  }
+
+  div {
+    h4 {
+      color: $text-darkcolor;
+      padding: 5px 0px;
+      font-family: Oswald, sans-serif;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  button {
+    background: $text-color;
+    border: none;
+    color: #fff;
+    outline: none;
+    padding: 17px 40px;
+    transition: all .3s;
+  }
+}
+
+// ----------------------------------------
+// ARCHITECTURE
+// ---------------------------------------
+// 2222222222222222.................
+.Amainimgdiv {
+  margin-top: 150px;
+  background-image: url("./../public/im2.png");
+  @include background(cover);
+  @include widthheigth(100%, 600px);
+  position: relative;
+
+  .Amainimgdiv2 {
+    background-image: url("./../public/onlyimage2.png");
+    @include background(cover);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      -webkit-text-stroke: 1px #e1e1e1;
+      color: transparent;
+    }
+
+    h2 {
+      color: $white-color;
+      font-weight: 600;
+    }
+  }
+
+  .Asubmaindiv {
+    position: relative;
+    padding: 22px;
+    background-image: url("./../public/Archiimg1.png");
+    @include background(cover);
+
+    h3 {
+      font-weight: 600;
+      font-family: Oswald, sans-serif;
+      line-height: 40px;
+    }
+
+    h6 {
+      font-size: 13px;
+      font-family: Oswald, sans-serif;
+      line-height: 40px;
+    }
+  }
+}
+
+// 3333333333333333333.....................
+.Amaindiv {
+  text-align: center;
+
+  div {
+    h1 {
+      font-weight: 600;
+      font-family: Oswald, sans-serif;
+      letter-spacing: 3px;
+
+      span {
+        color: $text-color;
+        font-weight: 400;
+      }
+    }
+
+    h6 {
+      color: $text-lightcolor;
+      font-family: Oswald, sans-serif;
+    }
+  }
+
+  .Afour {
+    h3 {
+      border: none;
+      @include commoncode(1px, 30px, uppercase, $text-darkcolor, 500, 18px);
+      font-family: Oswald, sans-serif;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: $text-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .Atext {
+    font-family: Oswald, sans-serif;
+
+    h6 {
+      color: $text-color;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    p {
+      color: $text-lightcolor;
+      font-size: 17px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------  RESPONSIVE
+@media only screen and (max-width: 575.98px) {
+  .Amainimgdiv2 {
+    @include widthheigth(100%, 75%);
+    @include topleft(80%, 0);
+
+    h1 {
+      font-size: 30px;
+      padding-left: 25px;
+    }
+
+    h2 {
+      padding-left: 20px;
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+
+  .Asubmaindiv {
+    @include topleft(15%, 3%);
+    @include widthheigth(94%, 59%);
+  }
+
+  .Amaindiv {
+    margin-top: 350px;
+
+    div {
+      h1 {
+        font-size: 35px;
+      }
+    }
+
+    .Afour {
+      padding: 50px 0px;
+    }
+
+    .Aimg {
+      padding: 40px 0px;
+    }
+
+    .Atext {
+      padding: 40px 0px 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 767.98px) {
+  .Amainimgdiv2 {
+    @include widthheigth(100%, 75%);
+    @include topleft(75%, 0);
+
+    h3 {
+      position: relative;
+      padding-left: 160px;
+      text-align: end;
+
+      &::before {
+        content: "";
+        position: absolute;
+        @include topleft(40px, 70px);
+        @include widthheigth(40%, 3px);
+        background-color: $white-color;
+      }
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      padding-left: 60px;
+      font-size: 40px;
+      line-height: 80px;
+    }
+  }
+
+  .Asubmaindiv {
+    @include topleft(34%, 9%);
+    @include widthheigth(82%, 35%);
+
+  }
+
+  .Amaindiv {
+    margin-top: 350px;
+
+    div {
+      h1 {
+        font-size: 45px;
+      }
+    }
+
+    .Afour {
+      padding: 50px 90px;
+    }
+
+    .Aimg {
+      padding: 40px 0px;
+    }
+
+    .Atext {
+      padding: 40px 0px 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 991.98px) {
+  .Amainimgdiv2 {
+    @include widthheigth(100%, 100%);
+    @include topleft(0, 64%);
+
+    h3 {
+      position: relative;
+      padding-left: 160px;
+      text-align: end;
+
+      &::before {
+        content: "";
+        position: absolute;
+        @include topleft(40px, 70px);
+        @include widthheigth(40%, 3px);
+        background-color: $white-color;
+      }
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      padding-left: 60px;
+      font-size: 40px;
+      line-height: 80px;
+    }
+  }
+
+  .Asubmaindiv {
+    @include topleft(43%, 5%);
+    @include widthheigth(54%, 50%);
+  }
+
+  .Amaindiv {
+    margin-top: 150px;
+
+    div {
+      h1 {
+        font-size: 45px;
+      }
+    }
+
+    .Afour {
+      padding: 50px 280px;
+    }
+
+    .Aimg {
+      padding: 40px 120px;
+    }
+
+    .Atext {
+      padding: 40px 250px 0px;
+    }
+  }
+}

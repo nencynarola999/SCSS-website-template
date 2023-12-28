@@ -1,0 +1,111 @@
+@mixin commoncode($letter, $lineheight, $texttransform, $color, $fweight, $fsize) {
+    letter-spacing: $letter;
+    line-height: $lineheight;
+    text-transform: $texttransform;
+    color: $color;
+    font-family: Oswald, sans-serif;
+    font-weight: $fweight;
+    font-size: $fsize;
+}
+
+@mixin background($bgsize) {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: $bgsize;
+}
+
+@mixin textcode($fsize, $color, $fweight, $letter) {
+    font-size: $fsize;
+    color: $color;
+    font-weight: $fweight;
+    letter-spacing: $letter;
+    text-align: center;
+}
+
+@mixin widthheigth($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin threeimage($color, $lineheight, $fweight, $fsize) {
+    color: $color;
+    line-height: $lineheight;
+    font-weight: $fweight;
+    font-size: $fsize;
+    font-family: Oswald, sans-serif;
+}
+
+@mixin topleft($top, $left) {
+    top: $top;
+    left: $left;
+}
+
+@mixin subthreedivmid($height) {
+    height: $height;
+    text-align: center;
+    padding: 30px 40px;
+    border: 1px solid #e1e1e1;
+}
+
+@mixin sixbgh1code {
+    color: #1e1e1e;
+    font-family: Oswald, sans-serif;
+    font-size: 27px;
+    line-height: 1.4;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+@mixin sixbgh5code {
+    color: #5f5c5c;
+    font-size: 15px;
+    font-family: Oswald, sans-serif;
+}
+
+@mixin sixbgh6code {
+    color: #5f5c5c;
+    font-size: 15px;
+    font-family: Oswald, sans-serif;
+    line-height: 35px;
+}
+
+@mixin numberposi2($lspac, $color, $fsize) {
+    letter-spacing: $lspac;
+    color: $color;
+    font-family: Oswald, sans-serif;
+    font-size: $fsize;
+}
+
+@mixin numberdiv {
+    font-size: 100px;
+    -webkit-text-stroke: 1px #e1e1e178;
+    color: transparent;
+    position: relative;
+}
+
+@mixin numberdivspan($right) {
+    font-family: Oswald, sans-serif;
+    color: black;
+    -webkit-text-stroke: 1px transparent;
+    font-size: 68px;
+    font-weight: bold;
+    position: absolute;
+    top: 29px;
+    right: $right;
+}
+
+@mixin setposidiv($color, $mbottom, $fsize, $texttrans) {
+    color: $color;
+    letter-spacing: 5px;
+    line-height: 24px;
+    margin-bottom: $mbottom;
+    font-size: $fsize;
+    text-transform: $texttrans;
+}
