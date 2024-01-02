@@ -12,5 +12,4 @@ const Architecture = () => {
     </div>
   )
 }
-
 export default Architecture

@@ -10,5 +10,4 @@ const interior2 = () => {
         </div>
     )
 }
-
 export default interior2

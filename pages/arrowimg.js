@@ -9,7 +9,6 @@ const Arrowimg = () => {
     </div>
   )
 }
-
 export default Arrowimg
 
 // 000000000000............{{{{{{{{{{{Arrowimg}}}}}}}}}}}

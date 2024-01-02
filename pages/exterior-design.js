@@ -12,5 +12,4 @@ const Exterior_Design = () => {
         </div>
     )
 }
-
 export default Exterior_Design

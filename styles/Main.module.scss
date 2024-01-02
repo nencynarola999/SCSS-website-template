@@ -49,11 +49,7 @@
     transition: all .5s ease;
     margin: 0px 20px;
 
-    &:focus {
-      background-color: #65646437;
-      color: $white-color;
-      border-top: 7px solid $text-color;
-    }
+    
 
     &:hover {
       background-color: #65646437;
@@ -61,6 +57,14 @@
       border-top: 7px solid $text-color;
     }
 
+  }
+  .navlinkdiv2 {
+    @include commoncode(1px, 30px, uppercase, $white-color, 500, 14px);
+    
+    background-color: #65646437;
+    padding: 30px 12px;
+    margin: 0px 20px;
+    border-top: 7px solid $text-color;
   }
 }
 
@@ -90,13 +94,13 @@
       background-color: $white-color;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-      h1 {
+      .im3h1 {
         color: $text-color;
         margin-right: 10px;
         font-size: 70px;
       }
 
-      h4 {
+      .im3h4 {
         @include flexcenter;
         font-size: 20px;
       }
@@ -110,7 +114,7 @@
   @include background(cover);
   @include flexcenter;
 
-  h1 {
+  p {
     font-size: 60px;
     -webkit-text-stroke: 1px #e1e1e1;
     color: transparent;
@@ -129,6 +133,7 @@
     @include threeimage($text-lightcolor, 20px, 100, 15px);
   }
 }
+
 // 5555555555555...........{{{{{{{{{{{{{{{{{{{{{videoimage}}}}}}}}}}}}}}}}}}}}}
 
 .videoimg {
@@ -195,7 +200,6 @@
   }
 
   .immm {
-    padding: 400px;
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -220,12 +224,12 @@
   justify-content: center;
   flex-direction: column;
 
-  h1 {
+  h2 {
     -webkit-text-stroke: 1px #e1e1e1;
     color: transparent;
   }
 
-  h2 {
+  h3 {
     color: $white-color;
     font-weight: 600;
   }
@@ -237,7 +241,7 @@
   text-align: center;
   margin: 100px 0px;
 
-  h1 {
+  h2 {
     color: $text-darkcolor;
     font-weight: bold;
     font-size: 45px;
@@ -249,7 +253,7 @@
     }
   }
 
-  h6 {
+  p {
     font-size: 15px;
     color: $text-lightcolor;
     font-family: Oswald, sans-serif;
@@ -313,33 +317,17 @@
 }
 
 // 10.10.10.10.10.10.10.10...........{{{{{{{{{{{{{{{numbercounting}}}}}}}}}}}}}}}
+
+
 .posi1 {
   position: relative;
 
   .posi2 {
     position: absolute;
-    @include topleft(35%, 45%);
-
-    h4 {
-      @include numberposi2(0px, $text-color, 21px);
-    }
-
-    h6 {
-      @include numberposi2(7px, $text-lightcolor, 17px);
-    }
   }
 
   .posi3 {
     position: absolute;
-    @include topleft(35%, 30%);
-
-    h4 {
-      @include numberposi2(0px, $text-color, 21px);
-    }
-
-    h6 {
-      @include numberposi2(7px, $text-lightcolor, 17px);
-    }
   }
 
   .numberdiv {
@@ -364,7 +352,7 @@
 .accorset {
   padding: 60px 22px;
 
-  h6 {
+  p {
     color: $text-color;
     line-height: 40px;
     letter-spacing: 7px;
@@ -372,7 +360,7 @@
     font-size: 13px;
   }
 
-  h1 {
+  h2 {
     line-height: 60px;
     letter-spacing: 7px;
     font-family: Oswald, sans-serif;
@@ -391,7 +379,7 @@
   @include widthheigth(100%, 800px);
   padding-top: 330px;
 
-  h1 {
+  h2 {
     font-weight: 700;
     letter-spacing: 7px;
     text-transform: uppercase;
@@ -428,12 +416,12 @@
       top: -130px;
       width: 100%;
 
-      h6 {
+      p {
         @include commoncode(5px, 40px, uppercase, $white-color, 400, 17px);
         font-family: Oswald, sans-serif;
       }
 
-      h1 {
+      h2 {
         @include commoncode(5px, 50px, capitalize, $white-color, bold, 50px);
         font-family: Oswald, sans-serif;
       }
@@ -534,31 +522,27 @@
       width: 100%;
       padding: 20px 10px;
 
-      h6 {
+      .settingtexth6 {
         @include commoncode(5px, 34px, uppercase, $text-color, 100, 16px);
-        margin-top: 100px;
+        margin-top: 170px;
       }
 
-      h1 {
+      .settingtexth1 {
         @include commoncode(5px, 40px, uppercase, $text-darkcolor, 600, 30px);
       }
 
-      h2 {
+      .settingtexth2 {
         @include commoncode(5px, 40px, uppercase, $text-color, 600, 30px);
       }
 
-      h3 {
+      .settingtexth3 {
         @include commoncode(5px, 40px, uppercase, $text-color, 300, 30px);
       }
 
-      h5 {
+      .settingtexth5 {
         @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 17px);
       }
     }
-  }
-
-  .threeimg {
-    @include widthheigth(100%, 1000px);
   }
 
   .videoimg {
@@ -578,12 +562,12 @@
   }
 
   .secondimage {
-    h1 {
+    h2 {
       font-size: 40px;
       padding-left: 25px;
     }
 
-    h2 {
+    h3 {
       padding-left: 20px;
       font-size: 40px;
       line-height: 60px;
@@ -593,7 +577,7 @@
   .accorset {
     width: 100%;
 
-    h1 {
+    h2 {
       font-size: 30px;
     }
   }
@@ -603,7 +587,7 @@
   }
 
   .footermain {
-    @include widthheigth(100%, 1290px);
+    @include widthheigth(100%, 1500px);
 
     .positionset {
       .textcolordiv {
@@ -620,6 +604,32 @@
 
       .setposidiv {
         top: 400px;
+      }
+    }
+  }
+
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 34%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-color, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 16px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 23%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-color, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 16px);
       }
     }
   }
@@ -645,10 +655,6 @@
     padding: 10px 20px;
   }
 
-  .threeimg {
-    padding-top: 300px;
-  }
-
   .accorset {
     width: 100%;
   }
@@ -658,8 +664,132 @@
       width: 100%;
     }
 
-    h1 {
+    h2 {
       font-size: 40px;
+    }
+  }
+
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 49%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-color, 19px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 16px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 35%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-color, 19px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 16px);
+      }
+    }
+  }
+
+  .twoimg {
+    .settingtext {
+      width: 95%;
+      margin: 0 auto;
+      padding: 20px 5px;
+
+      .settingtexth6 {
+        @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+        margin-top: 200px;
+      }
+
+      .settingtexth1 {
+        @include commoncode(10px, 52px, uppercase, $text-darkcolor, 600, 43px);
+      }
+
+      .settingtexth2 {
+        @include commoncode(10px, 60px, uppercase, $text-color, 600, 43px);
+      }
+
+      .settingtexth3 {
+        @include commoncode(10px, 60px, uppercase, $text-color, 300, 43px);
+      }
+
+      .settingtexth5 {
+        @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 17px);
+      }
+    }
+  }
+
+  .videoimg {
+    @include widthheigth(100%, 1px);
+    margin-bottom: 300px;
+
+    .video {
+      @include widthheigth(100%, 400px);
+
+      .videosub {
+        @include widthheigth(100%, 420px);
+        top: 30px;
+        right: 30px;
+
+      }
+    }
+  }
+
+  .bgcolor {
+    @include widthheigth(100%, 200px);
+  }
+
+  .secondimage {
+    h4 {
+      position: relative;
+      padding-left: 160px;
+      text-align: end;
+
+      &::before {
+        content: "";
+        position: absolute;
+        @include topleft(40px, 70px);
+        width: 40%;
+        height: 3px;
+        background-color: $white-color;
+      }
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+
+    h3 {
+      padding-left: 60px;
+      font-size: 60px;
+      line-height: 80px;
+    }
+  }
+
+  .footermain {
+    @include widthheigth(100%, 1400px);
+
+    .positionset {
+      .textcolordiv {
+        .input {
+          input {
+            padding: 15px 40px;
+          }
+
+          button {
+            padding: 12px 69px;
+          }
+        }
+      }
+
+      .setposidiv {
+        top: 270px;
+      }
     }
   }
 }
@@ -691,32 +821,27 @@
       margin: 0 auto;
       padding: 20px 10px;
 
-      h6 {
+      .settingtexth6 {
         @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
         margin-top: 200px;
       }
 
-      h1 {
+      .settingtexth1 {
         @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 47px);
       }
 
-      h2 {
+      .settingtexth2 {
         @include commoncode(10px, 60px, uppercase, $text-color, 600, 47px);
       }
 
-      h3 {
+      .settingtexth3 {
         @include commoncode(10px, 60px, uppercase, $text-color, 300, 47px);
       }
 
-      h5 {
+      .settingtexth5 {
         @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 17px);
       }
     }
-  }
-
-  .threeimg {
-    padding-top: 100px;
-    @include widthheigth(100%, 800px);
   }
 
   .videoimg {
@@ -736,7 +861,7 @@
   }
 
   .secondimage {
-    h3 {
+    h4 {
       position: relative;
       padding-left: 160px;
       text-align: end;
@@ -751,11 +876,11 @@
       }
     }
 
-    h1 {
+    h2 {
       font-size: 60px;
     }
 
-    h2 {
+    h3 {
       padding-left: 60px;
       font-size: 60px;
       line-height: 80px;
@@ -765,7 +890,7 @@
   .accorset {
     width: 100%;
 
-    h1 {
+    h2 {
       font-size: 40px;
     }
   }
@@ -780,7 +905,7 @@
       margin: 0 auto;
     }
 
-    h1 {
+    h2 {
       font-size: 45px;
     }
   }
@@ -806,6 +931,32 @@
       }
     }
   }
+
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 41%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-color, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 17px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 26%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-color, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 17px);
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 991.98px) {
@@ -819,24 +970,24 @@
       margin: 0 auto;
       padding: 20px 10px;
 
-      h6 {
+      .settingtexth6 {
         @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
         margin-top: 200px;
       }
 
-      h1 {
+      .settingtexth1 {
         @include commoncode(5px, 55px, uppercase, $text-darkcolor, 600, 43px);
       }
 
-      h2 {
+      .settingtexth2 {
         @include commoncode(5px, 55px, uppercase, $text-color, 600, 43px);
       }
 
-      h3 {
+      .settingtexth3 {
         @include commoncode(5px, 55px, uppercase, $text-color, 300, 43px);
       }
 
-      h5 {
+      .settingtexth5 {
         @include commoncode(2px, 34px, uppercase, $text-darkcolor, 100, 15px);
       }
     }
@@ -844,7 +995,6 @@
 
   .threeimg {
     padding-top: 70px;
-    @include widthheigth(100%, 500px);
   }
 
   .videoimg {
@@ -891,789 +1041,92 @@
   .bgcolor {
     @include widthheigth(100%, 400px);
   }
-}
 
-// ------------------------------------------
-// ABOUTPAGE
-// ---------------------------------------
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 58%);
 
-// 11111111111..............{{{{{{{{{{{Abimg}}}}}}}}}}}
-.aboutbgimg {
-  background-image: url("./../public/aboutbgimage.png");
-  @include background(cover);
-  width: 100%;
-  min-height: 500px;
-
-  .aboutbgimg2 {
-    min-height: 500px;
-    position: relative;
-    @include flexcenter;
-    flex-direction: column;
-
-    .aboutbutton {
-      position: absolute;
-      bottom: 0px;
-      background-color: $text-color;
-      border: none;
-      padding: 20px 40px;
-    }
-  }
-}
-
-// 2222222222222222.............{{{{{{{{{{{Simplesec}}}}}}}}}}}
-.simplesec {
-  @include widthheigth(60%, 100px);
-  background-color: #faf7f0;
-  position: relative;
-
-  h1 {
-    position: absolute;
-    top: -65px;
-    left: 80px;
-    -webkit-text-stroke: 1px #e1e1e1;
-    @include commoncode(12px, 140px, uppercase, transparent, bold, 107px);
-  }
-}
-
-// 33333333...........{{{{{{{{{{Onebigimgsec}}}}}}}}}}
-.onebg {
-  .onebgimg {
-    background-image: url("./../public/im1.png");
-    @include background(cover);
-    position: relative;
-
-    .onesettingtext {
-      position: absolute;
-      margin: 0 auto;
-    }
-
-    .oneim3 {
-      position: absolute;
-      top: 30px;
-      left: 100px;
-      display: flex;
-      background-color: $white-color;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      padding: 15px;
-
-      h1 {
-        color: $text-color;
-        margin-right: 10px;
-        font-size: 70px;
+      .posih4 {
+        @include numberposi2(0px, $text-color, 18px);
       }
 
-      h4 {
-        @include flexcenter;
-        font-size: 20px;
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 15px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 37%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-color, 18px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 15px);
       }
     }
   }
 }
 
-// 4444444444...........{{{{{{{{{{{{{Numbercountingsec}}}}}}}}}}}}}
-.aboutnumber {
-  background-color: #c19666;
+@media only screen and (min-width: 1200px) {
+  .posi1 {
+    .posi2 {
+      @include topleft(35%, 50%);
 
-  .aboutposi1 {
-    position: relative;
+      .posih4 {
+        @include numberposi2(0px, $text-color, 21px);
+      }
 
-    .aboutposi2 {
-      position: absolute;
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 17px);
+      }
+    }
+
+    .posi3 {
+      @include topleft(35%, 33%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-color, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 17px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .posi1 {
+    .posi2 {
       @include topleft(35%, 45%);
 
-      h4 {
-        @include numberposi2(0px, $text-darkcolor, 21px);
+      .posih4 {
+        @include numberposi2(0px, $text-color, 21px);
       }
 
-      h6 {
-        @include numberposi2(7px, $white-color, 17px);
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 17px);
       }
     }
 
-    .aboutposi3 {
-      position: absolute;
+    .posi3 {
       @include topleft(35%, 30%);
 
-      h4 {
-        @include numberposi2(0px, $text-darkcolor, 21px);
+      .posih4 {
+        @include numberposi2(0px, $text-color, 21px);
       }
 
-      h6 {
-        @include numberposi2(7px, $white-color, 17px);
-      }
-    }
-
-    .aboutnumberdiv {
-      @include numberdiv;
-
-      span {
-        @include numberdivspan(34px);
-      }
-    }
-
-    .aboutnumberdiv1 {
-      @include numberdiv;
-
-      span {
-        @include numberdivspan(25px);
+      .posih6 {
+        @include numberposi2(7px, $text-lightcolor, 17px);
       }
     }
   }
 }
 
-// 55555555............{{{{{{{{{Blacksec}}}}}}}}}
-.aboutblackbgimg {
-  background-image: url("./../public/aboutblackbg.png");
-  @include background(cover);
-  width: 100%;
 
-  .blackmain {
-    text-align: center;
-    padding-top: 100px;
 
-    h1 {
-      color: $white-color;
-      font-weight: bold;
-      font-size: 45px;
-      font-family: Oswald, sans-serif;
-      letter-spacing: 5px;
-
-      span {
-        color: $text-color;
-        font-weight: 300;
-      }
-    }
-
-    h6 {
-      font-size: 15px;
-      color: $white-color;
-      font-family: Oswald, sans-serif;
-      line-height: 40px;
-      letter-spacing: 7px;
-      padding-bottom: 40px;
-    }
-  }
-
-  .blackthreeimg {
-    background-color: $white-color;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    h3 {
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      transition: .5s;
-      cursor: pointer;
-
-      &:hover {
-        color: $text-color;
-      }
-    }
-
-    h6 {
-      font-size: 13px;
-    }
-  }
-}
-
-// 666666666666.............{{{{{{{{Aboutvideosec}}}}}}}}
-.aboutvideoimg {
-  background-image: url("./../public/video1image.png");
-  @include background(contain);
-  width: 100%;
-  height: 400px;
-
-  .aboutvideo {
-    background-color: $text-color;
-    position: relative;
-    width: 100%;
-    height: 600px;
-
-    .aboutvideosub {
-      background-image: url("./../public/chair.png");
-      @include background(cover);
-      position: absolute;
-      top: 8%;
-      right: 4%;
-      width: 100%;
-      height: 100%;
-
-      .aboutvideo_play {
-        border-radius: 50%;
-        position: absolute;
-        background: rgba(0, 0, 0, .1);
-        color: $text-color;
-        display: inline-block;
-        font-size: 27px;
-        height: 76px;
-        left: 50%;
-        line-height: 76px;
-        text-align: center;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%) scale(1.25);
-        transform: translate(-50%, -50%) scale(1.25);
-        width: 76px;
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a {
-          height: 83px;
-          width: 40px;
-          border-radius: 50%;
-        }
-      }
-    }
-  }
-}
-
-// --------------------------------------------------------------------  RESPONSIVE
-@media only screen and (max-width: 575.98px) {
-  .aboutbgimg2 {
-    .abouttext1 {
-      @include commoncode(5px, 60px, uppercase, $white-color, 600, 40px);
-    }
-
-    .abouttext2 {
-      @include commoncode(9px, 60px, uppercase, $white-color, 300, 14px);
-    }
-
-    .aboutbutton {
-      @include commoncode(5px, 10px, uppercase, $white-color, 300, 14px);
-    }
-  }
-
-
-  .onebg {
-    @include widthheigth(100%, 600px);
-
-    .onebgimg {
-      @include widthheigth(100%, 100%);
-
-      .onesettingtext {
-        top: 650px;
-        padding: 20px 10px;
-
-        h6 {
-          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
-          margin-top: 20px;
-        }
-
-        h1 {
-          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 35px);
-        }
-
-        h2 {
-          @include commoncode(10px, 60px, uppercase, $text-color, 600, 35px);
-        }
-
-        h3 {
-          @include commoncode(10px, 60px, uppercase, $text-color, 300, 35px);
-        }
-
-        h5 {
-          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
-        }
-      }
-    }
-  }
-
-  .aboutnumber {
-    margin-top: 700px;
-  }
-
-  .aboutvideoimg {
-    padding-top: 180px;
-    margin-bottom: 700px;
-  }
-
-  .aboutblackbgimg {
-    height: 1800px;
-  }
-}
-
-@media only screen and (min-width: 767.98px) {
-  .aboutbgimg2 {
-    .abouttext1 {
-      @include commoncode(5px, 70px, uppercase, $white-color, 600, 70px);
-    }
-
-    .abouttext2 {
-      @include commoncode(9px, 60px, uppercase, $white-color, 300, 14px);
-    }
-
-    .aboutbutton {
-      right: 0px;
-      @include commoncode(5px, 10px, uppercase, $white-color, 300, 14px);
-    }
-  }
-
-  .onebg {
-    @include widthheigth(100%, 600px);
-
-    .onebgimg {
-      @include widthheigth(100%, 100%);
-
-      .onesettingtext {
-        top: 600px;
-        padding: 20px 10px;
-
-        h6 {
-          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
-          margin-top: 20px;
-        }
-
-        h1 {
-          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 40px);
-        }
-
-        h2 {
-          @include commoncode(10px, 60px, uppercase, $text-color, 600, 40px);
-        }
-
-        h3 {
-          @include commoncode(10px, 60px, uppercase, $text-color, 300, 40px);
-        }
-
-        h5 {
-          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
-        }
-      }
-    }
-  }
-
-  .aboutnumber {
-    margin-top: 600px;
-  }
-
-  .aboutvideoimg {
-    padding-top: 200px;
-    margin-bottom: 700px;
-
-  }
-
-  .aboutblackbgimg {
-    height: 1300px;
-  }
-}
-
-@media only screen and (min-width: 991.98px) {
-  .onebg {
-    @include widthheigth(100%, 600px);
-
-    .onebgimg {
-      @include widthheigth(60%, 100%);
-
-      .onesettingtext {
-        top: 0;
-        right: -600px;
-
-        h6 {
-          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
-          margin-top: 20px;
-        }
-
-        h1 {
-          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 40px);
-        }
-
-        h2 {
-          @include commoncode(10px, 60px, uppercase, $text-color, 600, 40px);
-        }
-
-        h3 {
-          @include commoncode(10px, 60px, uppercase, $text-color, 300, 40px);
-        }
-
-        h5 {
-          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
-        }
-      }
-    }
-  }
-
-  .aboutnumber {
-    margin-top: 0px;
-  }
-
-  .aboutvideoimg {
-    padding-top: 300px;
-    margin-bottom: 850px;
-
-  }
-
-  .aboutblackbgimg {
-    height: 800px;
-  }
-}
-
-// ------------------------------------------
-// PROJECTPAGE
-// ---------------------------------------
-// 2222222222222222.............Pdouble
-.Psixmainddiv {
-  text-align: center;
-  margin: 100px 0px;
-
-  h1 {
-    color: $text-darkcolor;
-    font-weight: bold;
-    font-size: 45px;
-    font-family: Oswald, sans-serif;
-
-    span {
-      color: $text-color;
-      font-weight: 300;
-    }
-  }
-
-  h6 {
-    font-size: 15px;
-    color: $text-lightcolor;
-    font-family: Oswald, sans-serif;
-  }
-}
-
-.Pthreediv {
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  .Psubthreediv {
-    @include widthheigth(100%, 51%);
-  }
-
-  .Psssubthreediv {
-    @include subthreedivmid(44%);
-
-
-    h1 {
-      @include sixbgh1code;
-
-      &:hover {
-        color: $text-color;
-      }
-    }
-
-    h5 {
-      @include sixbgh5code;
-    }
-
-    h6 {
-      @include sixbgh6code;
-    }
-  }
-
-  .Psubthreedivmid {
-    @include subthreedivmid(44%);
-
-    h1 {
-      @include sixbgh1code;
-
-      &:hover {
-        color: $text-color;
-      }
-    }
-
-    h5 {
-      @include sixbgh5code;
-    }
-
-    h6 {
-      @include sixbgh6code;
-    }
-  }
-
-  .Psssubthreedivmid {
-    @include widthheigth(100%, 51%);
-  }
-
-  // next 3 image
-  .Psubthreediv2 {
-    @include widthheigth(100%, 47%);
-  }
-
-  .Psssubthreediv2 {
-    @include subthreedivmid(48%);
-
-
-    h1 {
-      @include sixbgh1code;
-
-      &:hover {
-        color: $text-color;
-      }
-    }
-
-    h5 {
-      @include sixbgh5code;
-    }
-
-    h6 {
-      @include sixbgh6code;
-    }
-  }
-
-  .Psubthreedivmid2 {
-    @include subthreedivmid(48%);
-
-    h1 {
-      @include sixbgh1code;
-
-      &:hover {
-        color: $text-color;
-      }
-    }
-
-    h5 {
-      @include sixbgh5code;
-    }
-
-    h6 {
-      @include sixbgh6code;
-    }
-  }
-
-  .Psssubthreedivmid2 {
-    @include widthheigth(100%, 47%);
-  }
-}
-
-// ------------------------------------------
-// SERVICEPAGE
-// ---------------------------------------
-
-// 22222222222222222...................
-.saccormaindiv {
-
-  .saccorimage {
-    background-image: url("./../public/serviceacc1img.png");
-    @include background(cover);
-    position: relative;
-
-    .saccorimage2 {
-      position: absolute;
-      background-image: url("./../public/serviceacc2img.png");
-      @include background(cover);
-      @include widthheigth(100%, 80vh);
-    }
-
-    .saccorimage3 {
-      position: absolute;
-
-      h6 {
-        @include threeimage($text-color, 40px, 100, 13px);
-        letter-spacing: 7px;
-      }
-
-      h1 {
-        span {
-          font-weight: 100;
-        }
-      }
-    }
-  }
-}
-
-// 33333333333333....................
-.Sthreeimg {
-  background-image: url("./../public/mainimg3.jpg");
-  @include background(cover);
-  @include flexcenter;
-
-  h1 {
-    font-size: 60px;
-    -webkit-text-stroke: 1px #e1e1e1;
-    color: transparent;
-  }
-
-  h2 {
-    @include threeimage($text-darkcolor, 40px, 600, 25px);
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-      color: $text-color
-    }
-  }
-
-  h6 {
-    @include threeimage($text-lightcolor, 20px, 100, 15px);
-  }
-}
-
-// --------------------------------------------------------------------  RESPONSIVE
-@media only screen and (max-width: 575.98px) {
-  .saccormaindiv {
-    @include widthheigth(85%, 100vh);
-    padding-top: 150px;
-
-
-    .saccorimage {
-      @include widthheigth(100%, 80vh);
-      margin-left: 15%;
-
-      .saccorimage2 {
-        @include topleft(20%, -15%);
-      }
-
-      .saccorimage3 {
-        @include topleft(120%, 0%);
-        padding: 60px 0px 60px 0px;
-
-        h1 {
-          @include threeimage($text-color, 60px, bold, 30px);
-          letter-spacing: 4px;
-        }
-      }
-    }
-  }
-
-  .Sthreeimg {
-    @include widthheigth(100%, 2160px);
-    margin-top: 760px
-  }
-}
-
-@media only screen and (min-width: 767.98px) {
-  .saccormaindiv {
-    @include widthheigth(85%, 100vh);
-    padding-top: 150px;
-
-    .saccorimage {
-      @include widthheigth(100%, 80vh);
-      margin-left: 15%;
-
-      .saccorimage2 {
-        @include topleft(20%, -18%);
-      }
-
-      .saccorimage3 {
-        @include topleft(120%, 0%);
-        padding: 60px 0px 60px 0px;
-
-        h1 {
-          @include threeimage($text-darkcolor, 60px, bold, 30px);
-          letter-spacing: 4px;
-        }
-      }
-    }
-  }
-
-  .Sthreeimg {
-    @include widthheigth(100%, 1100px);
-    margin-top: 650px
-  }
-}
-
-@media only screen and (min-width: 991.98px) {
-  .saccormaindiv {
-    @include widthheigth(50%, 100vh);
-    padding-top: 150px;
-
-
-    .saccorimage {
-      @include widthheigth(100%, 80vh);
-      margin-left: 15%;
-
-      .saccorimage2 {
-        @include topleft(20%, -18%);
-      }
-
-      .saccorimage3 {
-        @include topleft(0%, 110%);
-
-        h1 {
-          @include threeimage($text-darkcolor, 60px, bold, 40px);
-          letter-spacing: 7px;
-        }
-      }
-    }
-  }
-
-  .Sthreeimg {
-    @include widthheigth(100%, 750px);
-    margin-top: 75px;
-    padding-top: 150px
-  }
-}
-
-// ------------------------------------------
-// BLOGPAGE
-// ----------------------------------------
-// 22222222222222222.................
-.Bmaindiv {
-  margin-top: 150px;
-
-  h2 {
-    color: $text-darkcolor;
-    padding: 20px 0px;
-    font-family: Oswald, sans-serif;
-  }
-
-  div {
-    h6 {
-      color: $text-lightcolor;
-      font-family: Oswald, sans-serif;
-      line-height: 20px;
-    }
-  }
-
-  p {
-    padding-top: 20px;
-    color: $text-lightcolor;
-    font-family: Oswald, sans-serif;
-  }
-
-  a {
-    color: $text-color;
-    letter-spacing: 7px;
-  }
-
-  h1 {
-    color: $text-darkcolor;
-    font-weight: 700;
-    padding: 30px 0px;
-    font-family: Oswald, sans-serif;
-  }
-
-  div {
-    a {
-      h5 {
-        @include threeimage($text-darkcolor, 40px, 500, 19px);
-        letter-spacing: 0px;
-        transition: all 0.5s ease-in-out;
-
-        &:hover {
-          color: $text-color;
-        }
-      }
-    }
-  }
-
-  input {
-    border: 2px solid #e1e1e1;
-    margin-bottom: 20px;
-    padding: 15px;
-    width: 100%;
-  }
-
-  button {
-    letter-spacing: 3px;
-    min-width: 130px;
-    padding: 12px;
-    background: $text-color;
-    border: none;
-    color: $white-color;
-    font-weight: 600;
-    transition: all 0.5s ease-in-out;
-
-    &:hover {
-      background-color: $text-darkcolor;
-    }
-  }
-}
 
 // ------------------------------------------
 // CONTACTUSPAGE
@@ -1694,7 +1147,7 @@
     flex-direction: column;
     padding-bottom: 50px;
 
-    h6 {
+    p {
       color: $text-lightcolor;
       font-family: Oswald, sans-serif;
     }
@@ -1706,7 +1159,7 @@
 .Cformimgbg {
   @include widthheigth(100%, 500px);
 
-  h1 {
+  h2 {
     font-weight: 700;
     letter-spacing: 7px;
     text-transform: uppercase;
@@ -1808,12 +1261,12 @@
     flex-direction: column;
     justify-content: center;
 
-    h1 {
+    .Amainimgdiv2h1 {
       -webkit-text-stroke: 1px #e1e1e1;
       color: transparent;
     }
 
-    h2 {
+    .Amainimgdiv2h2 {
       color: $white-color;
       font-weight: 600;
     }
@@ -1844,7 +1297,7 @@
   text-align: center;
 
   div {
-    h1 {
+    h2 {
       font-weight: 600;
       font-family: Oswald, sans-serif;
       letter-spacing: 3px;
@@ -1898,12 +1351,12 @@
     @include widthheigth(100%, 75%);
     @include topleft(80%, 0);
 
-    h1 {
+    .Amainimgdiv2h1 {
       font-size: 30px;
       padding-left: 25px;
     }
 
-    h2 {
+    .Amainimgdiv2h2 {
       padding-left: 20px;
       font-size: 30px;
       line-height: 45px;
@@ -1919,7 +1372,7 @@
     margin-top: 350px;
 
     div {
-      h1 {
+      h2 {
         font-size: 35px;
       }
     }
@@ -1943,7 +1396,7 @@
     @include widthheigth(100%, 75%);
     @include topleft(75%, 0);
 
-    h3 {
+    .Amainimgdiv2h3 {
       position: relative;
       padding-left: 160px;
       text-align: end;
@@ -1957,11 +1410,11 @@
       }
     }
 
-    h1 {
+    .Amainimgdiv2h1 {
       font-size: 40px;
     }
 
-    h2 {
+    .Amainimgdiv2h2 {
       padding-left: 60px;
       font-size: 40px;
       line-height: 80px;
@@ -1978,7 +1431,7 @@
     margin-top: 350px;
 
     div {
-      h1 {
+      h2 {
         font-size: 45px;
       }
     }
@@ -2002,7 +1455,7 @@
     @include widthheigth(100%, 100%);
     @include topleft(0, 64%);
 
-    h3 {
+    .Amainimgdiv2h3 {
       position: relative;
       padding-left: 160px;
       text-align: end;
@@ -2016,11 +1469,11 @@
       }
     }
 
-    h1 {
+    .Amainimgdiv2h1 {
       font-size: 40px;
     }
 
-    h2 {
+    .Amainimgdiv2h2 {
       padding-left: 60px;
       font-size: 40px;
       line-height: 80px;
@@ -2036,7 +1489,7 @@
     margin-top: 150px;
 
     div {
-      h1 {
+      h2 {
         font-size: 45px;
       }
     }

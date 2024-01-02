@@ -29,20 +29,20 @@ const Threeimg = () => {
   return (
     <div className='container-fluid g-0'>
       <div className={main.threeimg}>
-        <div className="container px-4">
-          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div className="container g-0 py-5">
+          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0">
             {
               array?.map((x, i) => {
-                return <div className="col" key={i}>
-                    <div className="p-4 bg-white shadow-sm h-100">
-                      <div className="d-flex justify-content-between">
-                        <img src={x?.img} alt="" width="70px" className="mb-3" />
-                        <h1>{x?.h1}</h1>
-                      </div>
-                      <Link href={x?.link} legacyBehavior className='p-0' ><a><h2>{x?.h2}</h2></a></Link>
-                      <h6>{x?.h6}</h6>
+                return <div className="col p-3" key={i}>
+                  <div className="p-4 bg-white shadow-sm h-100">
+                    <div className="d-flex justify-content-between">
+                      <img src={x?.img} alt="" width="70px" className="mb-3" />
+                      <p>{x?.h1}</p>
                     </div>
+                    <Link href={x?.link} legacyBehavior className='p-0' ><a><h2>{x?.h2}</h2></a></Link>
+                    <h6>{x?.h6}</h6>
                   </div>
+                </div>
               })
             }
           </div>

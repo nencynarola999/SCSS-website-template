@@ -34,23 +34,23 @@ const Numbercountingsec = () => {
     ]
     return (
         <div className='container-fluid mt-5 mb-5 p-0 g-0'>
-            <div className="container mt-5 p-0">
+            <div className="container mt-5 p-0 px-2">
                 <div className={main.numbermain}>
-                    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2">
                         {
                             array?.map((x, i) => {
                                 return <div className="col" key={i}>
                                     <div className={main.posi1}>
                                         <div className="py-3 d-flex">
-                                            <h1 className={main.numberdiv}>{x?.h1} <CountUp
+                                            <p className={`mb-0 ${main.numberdiv}`}>{x?.h1} <CountUp
                                                 start={0}
                                                 end={x?.end}
                                                 duration={2}
                                                 enableScrollSpy
-                                            /></h1>
+                                            /></p>
                                             <div className={main[x?.classname]}>
-                                                <h4>{x?.h4}</h4>
-                                                <h6>{x?.h6}</h6>
+                                                <p className={`mb-0 ${main.posih4}`}>{x?.h4}</p>
+                                                <p className={`mb-0 ${main.posih6}`}>{x?.h6}</p>
                                             </div>
                                         </div>
                                     </div>

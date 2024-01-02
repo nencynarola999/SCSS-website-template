@@ -3,26 +3,26 @@ import main from '/styles/Main.module.scss'
 
 const ArchiApartment = () => {
     return (
-        <div className='container-fluid'>
-            <div className="container">
+        <div className='container-fluid g-0'>
+            <div className="container g-0">
                 <div className={main.Amaindiv}>
                     <div>
-                        <h1>APARTMENT <span>PLANS</span></h1>
+                        <h2>APARTMENT <span>PLANS</span></h2>
                         <h6>AT VERO EOS ET ACCUSAMUS ET IUSTO ODIO</h6>
                     </div>
                     <div className={main.Afour}>
-                        <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 '>
-                            <div className="col mb-2"><h3>APARTMENT</h3></div>
-                            <div className="col mb-2"><h3>SIMPLEX </h3></div>
-                            <div className="col mb-2"><h3>DUPLEX </h3></div>
-                            <div className="col mb-2"><h3>DOUBLE HEIGHT </h3></div>
+                        <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-0'>
+                            <div className="col "><h3>APARTMENT</h3></div>
+                            <div className="col "><h3>SIMPLEX </h3></div>
+                            <div className="col "><h3>DUPLEX </h3></div>
+                            <div className="col "><h3>DOUBLE HEIGHT </h3></div>
                         </div>
                     </div>
                     <div className={main.Aimg}>
                         <img src="/archiimg2.png" alt="" width="100%" />
                     </div>
                     <div className={main.Atext}>
-                        <div className="row">
+                        <div className="row g-0">
                             <div className="col-12 col-md-4">
                                 <div className='d-flex justify-content-evenly mb-4'>
                                     <h6>FLOOR</h6>

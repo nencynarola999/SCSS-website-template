@@ -33,20 +33,20 @@ const DPmaindiv = () => {
         },
     ]
     return (
-        <div className='container-fluid p-0'>
-            <div className="container  p-21">
+        <div className='container-fluid p-0 g-0'>
+            <div className="container  p-0 g-0">
                 <div className={main.Dpdivmain}>
                     <img src="/Dpimg1.jpg" alt="" width="100%" height="100%" />
                     <h2>Design & Planning</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere amet tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat odio facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit. Et nisi in libero facilisis sed est. Elit curabitur amet risus bibendum. Posuere et eget orci, tempor enim.</p>
                     <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat odio facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit.</p>
-                    <div className="row row-cols-1 row-cols-lg-2 g-5">
-                        <div className="col">
+                    <div className="row row-cols-1 row-cols-lg-2 g-0">
+                        <div className="col pe-0 pe-lg-3 ps-0">
                             <div className="">
                                 <img src="/Dpimg2.jpg" alt="" width="100%" />
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col ps-0 ps-lg-3 pe-0">
                             <div className="">
                                 <img src="/Dpimg3.jpg" alt="" width="100%" />
                             </div>
@@ -94,10 +94,10 @@ const DPmaindiv = () => {
                         <h6 className='ms-4'>Massa volutpat odio facilisis purus sit elementum.</h6>
                     </div>
                     <h2>Related Service</h2>
-                    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0">
                         {
                             array?.map((x, i) => {
-                                return <div className="col" key={i}>
+                                return <div className="col p-3" key={i}>
                                     <div className="p-4 bg-white shadow h-100">
                                         <div className="d-flex justify-content-between">
                                             <img src={x?.img} alt="" width="80px" height="100%" className="mb-3" />
@@ -112,10 +112,10 @@ const DPmaindiv = () => {
 
                     </div>
                     <div className="bg-white p-2 py-4 p-md-3 p-lg-5 shadow mt-5 rounded-5">
-                        <h1>Any question? Let's discuss</h1>
+                        <h2 className='fs-1 p-0 mb-0'>Any question? Let's discuss</h2>
                         <h6>Get in touch with us to see how we can help you with your project</h6>
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                            <div className="mb-3 row">
+                            <div className="mb-3 row g-0">
                                 <Form.Group className='col-12 col-lg-6 mt-5' md="4" controlId="validationCustom01">
                                     <Form.Control
                                         required

@@ -18,19 +18,19 @@ const Footer = () => {
     };
     return (
         <>
-            <div className='container-fluid bg-black pb-4 px-0'>
+            <div className='container-fluid bg-black pb-4 px-0 g-0'>
                 <div className={main.footermain}>
-                    <div className="container">
+                    <div className="container g-0">
                         <div className={main.positionset}>
                             <div className={main.textcolordiv}>
-                                <div className="row row-cols-1 row-cols-lg-2 d-flex justify-content-center align-items-center">
+                                <div className="row row-cols-1 row-cols-lg-2 d-flex justify-content-center align-items-center g-0">
                                     <div className="col">
-                                        <h6 className='m-0'>GET QUOTE</h6>
-                                        <h1>Call For Action</h1>
+                                        <p className='m-0'>GET QUOTE</p>
+                                        <h2>Call For Action</h2>
                                     </div>
                                     <div className="col">
                                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                                            <Row className="mb-3">
+                                            <Row className="mb-3 g-0">
                                                 <Form.Group md="4" controlId="validationCustomUsername">
                                                     <InputGroup hasValidation>
                                                         <div className={main.input}>
@@ -52,31 +52,31 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className={main.setposidiv}>
-                                <div className="row">
+                                <div className="row g-0">
                                     <div className="col-12 col-lg-6">
                                         <div className="row row-cols-2 row-cols-md-3" >
-                                            <h1 className="col p-0 m-0">
+                                            <div className="col p-0 m-0">
                                                 <img src="/footer1.png" alt="" width="100%" height="100%" />
-                                            </h1>
-                                            <h1 className="col p-0 m-0" >
+                                            </div>
+                                            <div className="col p-0 m-0" >
                                                 <img src="/footer2.png" alt="" width="100%" height="100%" />
-                                            </h1>
-                                            <h1 className="col p-0 m-0" >
+                                            </div>
+                                            <div className="col p-0 m-0" >
                                                 <img src="/footer3.png" alt="" width="100%" height="100%" />
-                                            </h1>
-                                            <h1 className="col p-0 m-0" >
+                                            </div>
+                                            <div className="col p-0 m-0" >
                                                 <img src="/footer4.png" alt="" width="100%" height="100%" />
-                                            </h1>
-                                            <h1 className="col p-0 m-0" >
+                                            </div>
+                                            <div className="col p-0 m-0" >
                                                 <img src="/footer5.png" alt="" width="100%" height="100%" />
-                                            </h1>
-                                            <h1 className="col p-0 m-0" >
+                                            </div>
+                                            <div className="col p-0 m-0" >
                                                 <img src="/footer6.png" alt="" width="100%" height="100%" />
-                                            </h1>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-4 ms-auto d-flex justify-content-center align-items-center flex-column mt-5 mt-lg-0">
-                                        <div>
+                                        <div className='px-2'>
                                             <h4>CONTACT</h4>
                                             <h5>Find out all the ways to enjoy luxury residential life around the world.</h5>
                                             <h6>A: 14/A, Miranda City, NYC T: 99 123 45 6970</h6>
@@ -91,10 +91,10 @@ const Footer = () => {
                 <div className={main.bottomfooter}>
                     <div className="container text-white">
                         <div className="row">
-                            <div className="col-12 col-md-4 order-2 order-md-1">
+                            <div className="col-12 col-sm-6 col-md-6 order-2 order-sm-1">
                                 <h6>© Copyright 2023 by <span>Envarch</span></h6>
                             </div>
-                            <div className="col-12 col-md-2 order-1 order-md-2 ms-auto d-flex justify-content-center align-items-center">
+                            <div className="col-12 col-sm-2 order-1 order-sm-2 ms-auto d-flex justify-content-center align-items-center">
                                 <Link legacyBehavior href="https://twitter.com/">
                                     <a className='me-2 fs-5' target="_blank"><AiOutlineTwitter /></a>
                                 </Link>

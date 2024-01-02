@@ -10,5 +10,4 @@ const Custom_Solutions = () => {
     </div>
   )
 }
-
 export default Custom_Solutions

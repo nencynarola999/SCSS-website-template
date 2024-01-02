@@ -1,0 +1,640 @@
+@import './Variable.module';
+@import "./Mixin.module";
+// ------------------------------------------
+// ABOUTPAGE
+// ---------------------------------------
+
+// 11111111111..............{{{{{{{{{{{Abimg}}}}}}}}}}}
+.aboutbgimg {
+  background-image: url("./../public/aboutbgimage.png");
+  @include background(cover);
+  width: 100%;
+  min-height: 500px;
+
+  .aboutbgimg2 {
+    min-height: 500px;
+    position: relative;
+    @include flexcenter;
+    flex-direction: column;
+
+    .aboutbutton {
+      position: absolute;
+      bottom: 0px;
+      background-color: $text-color;
+      border: none;
+      padding: 20px 40px;
+    }
+  }
+}
+
+// 2222222222222222.............{{{{{{{{{{{Simplesec}}}}}}}}}}}
+.simplesec {
+  @include widthheigth(60%, 100px);
+  background-color: #faf7f0;
+  position: relative;
+
+  h2 {
+    position: absolute;
+    top: -65px;
+    left: 80px;
+    -webkit-text-stroke: 1px #e1e1e1;
+    @include commoncode(12px, 140px, uppercase, transparent, bold, 107px);
+  }
+}
+
+// 33333333...........{{{{{{{{{{Onebigimgsec}}}}}}}}}}
+.onebg {
+  .onebgimg {
+    background-image: url("./../public/im1.png");
+    @include background(cover);
+    position: relative;
+
+    .onesettingtext {
+      position: absolute;
+      margin: 0 auto;
+    }
+
+    .oneim3 {
+      position: absolute;
+      top: 30px;
+      left: 100px;
+      display: flex;
+      background-color: $white-color;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 15px;
+
+      .oneim3h1 {
+        color: $text-color;
+        margin-right: 10px;
+        font-size: 70px;
+      }
+
+      .oneim3h4 {
+        @include flexcenter;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// 4444444444...........{{{{{{{{{{{{{Numbercountingsec}}}}}}}}}}}}}
+.aboutnumber {
+  background-color: #c19666;
+
+  .aboutposi1 {
+    position: relative;
+
+    .aboutposi2 {
+      position: absolute;
+      // @include topleft(35%, 45%);
+
+      // h4 {
+      //   @include numberposi2(0px, $text-darkcolor, 21px);
+      // }
+
+      // h6 {
+      //   @include numberposi2(7px, $white-color, 17px);
+      // }
+    }
+
+    .aboutposi3 {
+      position: absolute;
+      // @include topleft(35%, 30%);
+
+      // h4 {
+      //   @include numberposi2(0px, $text-darkcolor, 21px);
+      // }
+
+      // h6 {
+      //   @include numberposi2(7px, $white-color, 17px);
+      // }
+    }
+
+    .aboutnumberdiv {
+      @include numberdiv;
+
+      span {
+        @include numberdivspan(34px);
+      }
+    }
+
+    .aboutnumberdiv1 {
+      @include numberdiv;
+
+      span {
+        @include numberdivspan(25px);
+      }
+    }
+  }
+}
+
+// 55555555............{{{{{{{{{Blacksec}}}}}}}}}
+.aboutblackbgimg {
+  background-image: url("./../public/aboutblackbg.png");
+  @include background(cover);
+  width: 100%;
+
+  .blackmain {
+    text-align: center;
+    padding-top: 100px;
+
+    h2 {
+      color: $white-color;
+      font-weight: bold;
+      font-size: 45px;
+      font-family: Oswald, sans-serif;
+      letter-spacing: 5px;
+
+      span {
+        color: $text-color;
+        font-weight: 300;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      color: $white-color;
+      font-family: Oswald, sans-serif;
+      line-height: 40px;
+      letter-spacing: 7px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .blackthreeimg {
+    background-color: $white-color;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    h3 {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: .5s;
+      cursor: pointer;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    h6 {
+      font-size: 13px;
+    }
+  }
+}
+
+// 666666666666.............{{{{{{{{Aboutvideosec}}}}}}}}
+.aboutvideoimg {
+  background-image: url("./../public/video1image.png");
+  @include background(contain);
+  width: 100%;
+  height: 400px;
+
+  .aboutvideo {
+    background-color: $text-color;
+    position: relative;
+    width: 100%;
+    height: 600px;
+
+    .aboutvideosub {
+      background-image: url("./../public/chair.png");
+      @include background(cover);
+      position: absolute;
+      top: 8%;
+      right: 4%;
+      width: 100%;
+      height: 100%;
+
+      .aboutvideo_play {
+        border-radius: 50%;
+        position: absolute;
+        background: rgba(0, 0, 0, .1);
+        color: $text-color;
+        display: inline-block;
+        font-size: 27px;
+        height: 76px;
+        left: 50%;
+        line-height: 76px;
+        text-align: center;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1.25);
+        transform: translate(-50%, -50%) scale(1.25);
+        width: 76px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          height: 83px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------------------------  RESPONSIVE
+@media only screen and (max-width: 575.98px) {
+  .aboutbgimg2 {
+    .abouttext1 {
+      @include commoncode(5px, 60px, uppercase, $white-color, 600, 40px);
+    }
+
+    .abouttext2 {
+      @include commoncode(9px, 60px, uppercase, $white-color, 300, 14px);
+    }
+
+    .aboutbutton {
+      @include commoncode(5px, 10px, uppercase, $white-color, 300, 14px);
+    }
+  }
+
+
+  .onebg {
+    @include widthheigth(100%, 600px);
+
+    .onebgimg {
+      @include widthheigth(100%, 100%);
+
+      .onesettingtext {
+        top: 650px;
+        padding: 20px 10px;
+
+        .onesettingtexth6 {
+          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+          margin-top: 20px;
+        }
+
+        .onesettingtexth1 {
+          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 35px);
+        }
+
+        .onesettingtexth2 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 600, 35px);
+        }
+
+        .onesettingtexth3 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 300, 35px);
+        }
+
+        .onesettingtexth5 {
+          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
+        }
+      }
+    }
+  }
+
+  .aboutnumber {
+    margin-top: 700px;
+  }
+
+  .aboutvideoimg {
+    padding-top: 180px;
+    margin-bottom: 700px;
+  }
+
+  .aboutblackbgimg {
+    height: 2000px;
+  }
+
+  .aboutposi1 {
+    .aboutposi2 {
+      @include topleft(35%, 34%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 16px);
+      }
+    }
+
+    .aboutposi3 {
+      @include topleft(35%, 23%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 16px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 575.98px) {
+  .aboutbgimg2 {
+    .abouttext1 {
+      @include commoncode(5px, 70px, uppercase, $white-color, 600, 70px);
+    }
+
+    .abouttext2 {
+      @include commoncode(9px, 60px, uppercase, $white-color, 300, 14px);
+    }
+
+    .aboutbutton {
+      right: 0px;
+      @include commoncode(5px, 10px, uppercase, $white-color, 300, 14px);
+    }
+  }
+
+  .onebg {
+    @include widthheigth(100%, 600px);
+
+    .onebgimg {
+      @include widthheigth(100%, 100%);
+
+      .onesettingtext {
+        top: 600px;
+        padding: 20px 10px;
+
+        .onesettingtexth6 {
+          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+          margin-top: 20px;
+        }
+
+        .onesettingtexth1 {
+          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 40px);
+        }
+
+        .onesettingtexth2 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 600, 40px);
+        }
+
+        .onesettingtexth3 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 300, 40px);
+        }
+
+        .onesettingtexth5 {
+          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
+        }
+      }
+    }
+  }
+
+  .aboutnumber {
+    margin-top: 600px;
+  }
+
+  .aboutvideoimg {
+    padding-top: 200px;
+    margin-bottom: 700px;
+
+  }
+
+  .aboutblackbgimg {
+    height: 1200px;
+  }
+
+  .aboutposi1 {
+    .aboutposi2 {
+      @include topleft(35%, 49%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 19px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 16px);
+      }
+    }
+
+    .aboutposi3 {
+      @include topleft(35%, 35%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 19px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 16px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 767.98px) {
+  .aboutbgimg2 {
+    .abouttext1 {
+      @include commoncode(5px, 70px, uppercase, $white-color, 600, 70px);
+    }
+
+    .abouttext2 {
+      @include commoncode(9px, 60px, uppercase, $white-color, 300, 14px);
+    }
+
+    .aboutbutton {
+      right: 0px;
+      @include commoncode(5px, 10px, uppercase, $white-color, 300, 14px);
+    }
+  }
+
+  .onebg {
+    @include widthheigth(100%, 600px);
+
+    .onebgimg {
+      @include widthheigth(100%, 100%);
+
+      .onesettingtext {
+        top: 600px;
+        padding: 20px 10px;
+
+        .onesettingtexth6 {
+          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+          margin-top: 20px;
+        }
+
+        .onesettingtexth1 {
+          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 40px);
+        }
+
+        .onesettingtexth2 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 600, 40px);
+        }
+
+        .onesettingtexth3 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 300, 40px);
+        }
+
+        .onesettingtexth5 {
+          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
+        }
+      }
+    }
+  }
+
+  .aboutnumber {
+    margin-top: 600px;
+  }
+
+  .aboutvideoimg {
+    padding-top: 200px;
+    margin-bottom: 700px;
+
+  }
+
+  .aboutblackbgimg {
+    height: 1300px;
+  }
+
+  .aboutposi1 {
+    .aboutposi2 {
+      @include topleft(35%, 41%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+
+    .aboutposi3 {
+      @include topleft(35%, 26%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 991.98px) {
+  .onebg {
+    @include widthheigth(100%, 600px);
+
+    .onebgimg {
+      @include widthheigth(60%, 100%);
+
+      .onesettingtext {
+        top: 0;
+        right: -600px;
+
+        .onesettingtexth6 {
+          @include commoncode(5px, 34px, uppercase, $text-color, 500, 16px);
+          margin-top: 20px;
+        }
+
+        .onesettingtexth1 {
+          @include commoncode(10px, 40px, uppercase, $text-darkcolor, 600, 40px);
+        }
+
+        .onesettingtexth2 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 600, 40px);
+        }
+
+        .onesettingtexth3 {
+          @include commoncode(10px, 60px, uppercase, $text-color, 300, 40px);
+        }
+
+        .onesettingtexth5 {
+          @include commoncode(5px, 34px, uppercase, $text-darkcolor, 100, 15px);
+        }
+      }
+    }
+  }
+
+  .aboutnumber {
+    margin-top: 0px;
+  }
+
+  .aboutvideoimg {
+    padding-top: 300px;
+    margin-bottom: 850px;
+
+  }
+
+  .aboutblackbgimg {
+    height: 800px;
+  }
+
+  .aboutposi1 {
+    .aboutposi2 {
+      @include topleft(35%, 58%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 18px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 15px);
+      }
+    }
+
+    .aboutposi3 {
+      @include topleft(35%, 37%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 18px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 15px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .aboutposi1 {
+    .aboutposi2 {
+      @include topleft(35%, 50%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+
+    .aboutposi3 {
+      @include topleft(35%, 33%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .aboutposi1 {
+    .aboutposi2 {
+      @include topleft(35%, 45%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+
+    .aboutposi3 {
+      @include topleft(35%, 30%);
+
+      .posih4 {
+        @include numberposi2(0px, $text-darkcolor, 21px);
+      }
+
+      .posih6 {
+        @include numberposi2(7px, $white-color, 17px);
+      }
+    }
+  }
+}

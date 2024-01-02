@@ -10,5 +10,4 @@ const Concept_Planning = () => {
     </div>
   )
 }
-
 export default Concept_Planning

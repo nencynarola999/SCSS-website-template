@@ -1,0 +1,79 @@
+@import './Variable.module';
+@import "./Mixin.module";
+
+// ------------------------------------------
+// BLOGPAGE
+// ----------------------------------------
+// 22222222222222222.................
+.Bmaindiv {
+    margin-top: 150px;
+  
+    h2 {
+      color: $text-darkcolor;
+      padding: 20px 0px;
+      font-family: Oswald, sans-serif;
+    }
+  
+    div {
+      .Bmaindivh6 {
+        color: $text-lightcolor;
+        font-family: Oswald, sans-serif;
+        line-height: 20px;
+      }
+    }
+  
+    p {
+      padding-top: 20px;
+      color: $text-lightcolor;
+      font-family: Oswald, sans-serif;
+    }
+  
+    a {
+      color: $text-color;
+      letter-spacing: 7px;
+    }
+  
+    .Bmaindivh1 {
+      color: $text-darkcolor;
+      font-weight: 700;
+      padding: 30px 0px;
+      font-family: Oswald, sans-serif;
+    }
+  
+    div {
+      a {
+        h5 {
+          @include threeimage($text-darkcolor, 40px, 500, 19px);
+          letter-spacing: 0px;
+          transition: all 0.5s ease-in-out;
+  
+          &:hover {
+            color: $text-color;
+          }
+        }
+      }
+    }
+  
+    input {
+      border: 2px solid #e1e1e1;
+      margin-bottom: 20px;
+      padding: 15px;
+      width: 100%;
+    }
+  
+    button {
+      letter-spacing: 3px;
+      min-width: 130px;
+      padding: 12px;
+      background: $text-color;
+      border: none;
+      color: $white-color;
+      font-weight: 600;
+      transition: all 0.5s ease-in-out;
+  
+      &:hover {
+        background-color: $text-darkcolor;
+      }
+    }
+  }
+  

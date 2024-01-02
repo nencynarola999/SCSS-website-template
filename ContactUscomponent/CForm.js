@@ -14,15 +14,15 @@ const CForm = () => {
     setValidated(true);
   };
   return (
-    <div className='container-fluid p-0'>
+    <div className='container-fluid p-0 g-0'>
       <div className={main.Cformimgbg}>
-        <div className="container">
+        <div className="container g-0 p-0">
           <div className={main.Cformbgsetting}>
             <div className="bg-white py-4 p-md-2 p-lg-5 shadow">
               <div className=" py-0 p-md-2 p-lg-5">
-                <h1 className='text-center'>REQUEST A VISIT</h1>
+                <h2 className='text-center fs-1'>REQUEST A VISIT</h2>
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                  <Row className="mb-3">
+                  <Row className="mb-3 g-0">
                     <Form.Group md="4" controlId="validationCustom01">
                       <Form.Control
                         required

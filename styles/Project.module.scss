@@ -1,0 +1,135 @@
+@import './Variable.module';
+@import "./Mixin.module";
+
+// ------------------------------------------
+// PROJECTPAGE
+// ---------------------------------------
+// 2222222222222222.............Pdouble
+.Psixmainddiv {
+    text-align: center;
+    margin: 100px 0px;
+  
+    h2 {
+      color: $text-darkcolor;
+      font-weight: bold;
+      font-size: 45px;
+      font-family: Oswald, sans-serif;
+  
+      span {
+        color: $text-color;
+        font-weight: 300;
+      }
+    }
+  
+    p {
+      font-size: 15px;
+      color: $text-lightcolor;
+      font-family: Oswald, sans-serif;
+    }
+  }
+  
+  .Pthreediv {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    .Psubthreediv {
+      @include widthheigth(100%, 51%);
+    }
+  
+    .Psssubthreediv {
+      @include subthreedivmid(44%);
+  
+  
+      h3 {
+        @include sixbgh1code;
+  
+        &:hover {
+          color: $text-color;
+        }
+      }
+  
+      h5 {
+        @include sixbgh5code;
+      }
+  
+      h6 {
+        @include sixbgh6code;
+      }
+    }
+  
+    .Psubthreedivmid {
+      @include subthreedivmid(44%);
+  
+      h3 {
+        @include sixbgh1code;
+  
+        &:hover {
+          color: $text-color;
+        }
+      }
+  
+      h5 {
+        @include sixbgh5code;
+      }
+  
+      h6 {
+        @include sixbgh6code;
+      }
+    }
+  
+    .Psssubthreedivmid {
+      @include widthheigth(100%, 51%);
+    }
+  
+    // next 3 image
+    .Psubthreediv2 {
+      @include widthheigth(100%, 47%);
+    }
+  
+    .Psssubthreediv2 {
+      @include subthreedivmid(48%);
+  
+  
+      h3 {
+        @include sixbgh1code;
+  
+        &:hover {
+          color: $text-color;
+        }
+      }
+  
+      h5 {
+        @include sixbgh5code;
+      }
+  
+      h6 {
+        @include sixbgh6code;
+      }
+    }
+  
+    .Psubthreedivmid2 {
+      @include subthreedivmid(48%);
+  
+      h3 {
+        @include sixbgh1code;
+  
+        &:hover {
+          color: $text-color;
+        }
+      }
+  
+      h5 {
+        @include sixbgh5code;
+      }
+  
+      h6 {
+        @include sixbgh6code;
+      }
+    }
+  
+    .Psssubthreedivmid2 {
+      @include widthheigth(100%, 47%);
+    }
+  }

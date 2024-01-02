@@ -1,5 +1,5 @@
 import React from 'react'
-import main from '/styles/Main.module.scss'
+import main from '/styles/About.module.scss'
 
 const Blacksec = () => {
     let array = [
@@ -24,12 +24,12 @@ const Blacksec = () => {
         <div>
             <div className="container-fluid g-0">
                 <div className={main.aboutblackbgimg}>
-                    <div className="container">
+                    <div className="container g-0">
                         <div className={main.blackmain}>
-                            <h1>MEET THE  <span>TEAM</span></h1>
-                            <h6>OUR TEAM MEMBERS</h6>
+                            <h2>MEET THE  <span>TEAM</span></h2>
+                            <p>OUR TEAM MEMBERS</p>
                         </div>
-                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-0">
                             {
                                 array?.map((x, i) => {
                                     return  <div className="col h-100 p-3" key={i}>

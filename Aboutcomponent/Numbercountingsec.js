@@ -1,5 +1,5 @@
 import React from 'react'
-import main from '/styles/Main.module.scss'
+import main from '/styles/About.module.scss'
 import CountUp from 'react-countup';
 const Numbercountingsec = () => {
     let array = [
@@ -35,23 +35,23 @@ const Numbercountingsec = () => {
     return (
         <div className='container-fluid p-0 g-0'>
             <div className={main.aboutnumber}>
-                <div className="container  py-5">
+                <div className="container g-0 py-5">
                     <div className={main.aboutnumbermain}>
-                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+                        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-0">
                             {
                                 array?.map((x, i) => {
-                                    return <div className="col"  key={i}>
+                                    return <div className="col p-2"  key={i}>
                                             <div className={main.aboutposi1}>
                                                 <div className="py-3 d-flex">
-                                                    <h1 className={main?.[x?.classname]}>{x?.h1} <CountUp
+                                                    <p className={`mb-0 ${main?.[x?.classname]}`}>{x?.h1} <CountUp
                                                         start={0}
                                                         end={x?.h1}
                                                         duration={2}
                                                         enableScrollSpy
-                                                    /></h1>
+                                                    /></p>
                                                     <div className={main?.[x?.posiclass]}>
-                                                        <h4>{x?.h4}</h4>
-                                                        <h6>{x?.h6}</h6>
+                                                        <p className={`mb-0 ${main.posih4}`}>{x?.h4}</p>
+                                                        <p className={`mb-0 ${main.posih6}`}>{x?.h6}</p>
                                                     </div>
                                                 </div>
                                             </div>

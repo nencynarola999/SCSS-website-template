@@ -5,8 +5,8 @@ import { IoIosCall } from 'react-icons/io';
 
 const Firstsec = () => {
     return (
-        <div className="container-fluid pt-5 mt-5">
-            <div className="container p-4">
+        <div className="container-fluid pt-5 mt-5 g-0">
+            <div className="container p-4 g-0">
                 <div className="row g-0 h-100">
                     <div className="col-2 d-flex align-items-center">
                         <img src="/logo.png" alt="" width="140" height="38" />

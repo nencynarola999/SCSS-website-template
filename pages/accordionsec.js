@@ -27,15 +27,15 @@ const Accordionsec = () => {
     },
   ]
   return (
-    <div className='container-fluid'>
-      <div className="row row-cols-1 row-cols-lg-2">
+    <div className='container-fluid g-0'>
+      <div className="row row-cols-1 row-cols-lg-2 g-0">
         <div className="col p-0">
           <img src="/accordionimg.png" alt="" width="100%" height="700px" />
         </div>
         <div className="col">
           <div className={main.accorset}>
-            <h6>BEST ARCHITECTURE</h6>
-            <h1>ARCHITECTURE DID EXPECT <span>STRATEGIST</span></h1>
+            <p>BEST ARCHITECTURE</p>
+            <h2>ARCHITECTURE DID EXPECT <span>STRATEGIST</span></h2>
             <Accordion >
               {
                 array?.map((x, i) => {

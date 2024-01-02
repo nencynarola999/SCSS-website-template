@@ -10,5 +10,4 @@ const Furniture_Decor = () => {
     </div>
   )
 }
-
 export default Furniture_Decor

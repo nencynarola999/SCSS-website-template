@@ -14,5 +14,4 @@ const Contact_Us = () => {
         </div>
     )
 }
-
 export default Contact_Us

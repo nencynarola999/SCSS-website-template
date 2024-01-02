@@ -3,9 +3,9 @@ import main from '/styles/Main.module.scss'
 
 const ATwoimg = () => {
   return (
-    <div className='container-fluid p-0'>
-      <div className="container p-0">
-        <div className="row">
+    <div className='container-fluid p-0 g-0'>
+      <div className="container p-0 g-0">
+        <div className="row g-0">
           <div className="col-12 col-lg-9">
             <div className={main.Amainimgdiv}>
               <div className={main.Asubmaindiv}>
@@ -14,10 +14,10 @@ const ATwoimg = () => {
               </div>
               <div className={main.Amainimgdiv2}>
                 <div className="d-flex">
-                  <h3 className='d-none d-md-block'></h3>
-                  <h1>PROJECT COMPLEX</h1>
+                  <p className={`d-none d-md-block mb-0 ${main.Amainimgdiv2h3}`}></p>
+                  <p className={`mb-0 ${main.Amainimgdiv2h1}`}>PROJECT COMPLEX</p>
                 </div>
-                <h2>PROJECT PARK <br /> PROJECT GALLERY <br />HOSPITAL</h2>
+                <p className={`mb-0 ${main.Amainimgdiv2h2}`}>PROJECT PARK <br /> PROJECT GALLERY <br />HOSPITAL</p>
               </div>
             </div>
           </div>

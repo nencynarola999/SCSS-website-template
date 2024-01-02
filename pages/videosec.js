@@ -4,9 +4,9 @@ import { BsPlayFill } from 'react-icons/bs'
 
 const Videosec = () => {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid g-0'>
       <div className={main.videoimg}>
-        <div className="container p-0">
+        <div className="container p-0 g-0">
           <div className={main.video}>
             <div className={main.videosub}>
               <div className={main.video_play}>

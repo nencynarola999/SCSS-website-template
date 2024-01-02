@@ -10,5 +10,4 @@ const Design_Planning = () => {
     </div>
   )
 }
-
 export default Design_Planning

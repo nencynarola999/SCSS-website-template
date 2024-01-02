@@ -1,0 +1,193 @@
+@import './Variable.module';
+@import "./Mixin.module";
+
+// ------------------------------------------
+// SERVICEPAGE
+// ---------------------------------------
+
+// 22222222222222222...................
+.saccormaindiv {
+
+    .saccorimage {
+      background-image: url("./../public/serviceacc1img.png");
+      @include background(cover);
+      position: relative;
+  
+      .saccorimage2 {
+        position: absolute;
+        background-image: url("./../public/serviceacc2img.png");
+        @include background(cover);
+        @include widthheigth(100%, 80vh);
+      }
+  
+      .saccorimage3 {
+        position: absolute;
+  
+        p {
+          @include threeimage($text-color, 40px, 100, 13px);
+          letter-spacing: 7px;
+        }
+  
+        h2 {
+          span {
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+  
+  // 33333333333333....................
+  .Sthreeimg {
+    background-image: url("./../public/mainimg3.jpg");
+    @include background(cover);
+    @include flexcenter;
+  
+    h2 {
+      font-size: 60px;
+      -webkit-text-stroke: 1px #e1e1e1;
+      color: transparent;
+    }
+  
+    h3 {
+      @include threeimage($text-darkcolor, 40px, 600, 25px);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+  
+      &:hover {
+        color: $text-color
+      }
+    }
+  
+    h6 {
+      @include threeimage($text-lightcolor, 20px, 100, 15px);
+    }
+  }
+  
+  // --------------------------------------------------------------------  RESPONSIVE
+  @media only screen and (max-width: 575.98px) {
+    .saccormaindiv {
+      @include widthheigth(85%, 100vh);
+      padding-top: 150px;
+  
+  
+      .saccorimage {
+        @include widthheigth(100%, 80vh);
+        margin-left: 15%;
+  
+        .saccorimage2 {
+          @include topleft(20%, -15%);
+        }
+  
+        .saccorimage3 {
+          @include topleft(120%, 0%);
+          padding: 60px 0px 60px 0px;
+  
+          h2 {
+            @include threeimage($text-darkcolor, 60px, bold, 30px);
+            letter-spacing: 4px;
+          }
+        }
+      }
+    }
+  
+    .Sthreeimg {
+      @include widthheigth(100%, 2160px);
+      margin-top: 760px
+    }
+  }
+  
+  @media only screen and (min-width: 575.98px) {
+    .saccormaindiv {
+      @include widthheigth(85%, 100vh);
+      padding-top: 150px;
+  
+      .saccorimage {
+        @include widthheigth(100%, 80vh);
+        margin-left: 15%;
+  
+        .saccorimage2 {
+          @include topleft(20%, -18%);
+        }
+  
+        .saccorimage3 {
+          @include topleft(120%, 0%);
+          padding: 60px 0px 60px 0px;
+  
+          h2 {
+            @include threeimage($text-darkcolor, 60px, bold, 30px);
+            letter-spacing: 4px;
+          }
+        }
+      }
+    }
+  
+    .Sthreeimg {
+      @include widthheigth(100%, 1300px);
+      margin-top: 660px;
+    }
+  }
+  
+  @media only screen and (min-width: 767.98px) {
+    .saccormaindiv {
+      @include widthheigth(85%, 100vh);
+      padding-top: 150px;
+  
+      .saccorimage {
+        @include widthheigth(100%, 80vh);
+        margin-left: 15%;
+  
+        .saccorimage2 {
+          @include topleft(20%, -18%);
+        }
+  
+        .saccorimage3 {
+          @include topleft(120%, 0%);
+          padding: 60px 0px 60px 0px;
+  
+          h2 {
+            @include threeimage($text-darkcolor, 60px, bold, 30px);
+            letter-spacing: 4px;
+          }
+        }
+      }
+    }
+  
+    .Sthreeimg {
+      @include widthheigth(100%, 1100px);
+      margin-top: 650px
+    }
+  }
+  
+  @media only screen and (min-width: 991.98px) {
+    .saccormaindiv {
+      @include widthheigth(50%, 100vh);
+      padding-top: 150px;
+  
+  
+      .saccorimage {
+        @include widthheigth(100%, 80vh);
+        margin-left: 15%;
+  
+        .saccorimage2 {
+          @include topleft(20%, -18%);
+        }
+  
+        .saccorimage3 {
+          @include topleft(0%, 110%);
+          padding: 0px;
+  
+          h2 {
+            @include threeimage($text-darkcolor, 60px, bold, 40px);
+            letter-spacing: 7px;
+          }
+        }
+      }
+    }
+  
+    .Sthreeimg {
+      @include widthheigth(100%, 750px);
+      margin-top: 75px;
+      padding-top: 150px
+    }
+  }

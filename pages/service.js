@@ -7,7 +7,7 @@ import Formbgimg from './formbgimg'
 const service = () => {
   return (
     <div>
-           <Sbgimg />
+      <Sbgimg />
       <Saccorsec />
       <Ssiximagesec />
       <Formbgimg />

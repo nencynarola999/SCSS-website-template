@@ -5,10 +5,9 @@ import React from 'react'
 const project = () => {
   return (
     <div>
-          <Pbgimg />
+      <Pbgimg />
       <Pdoublesixsec />
     </div>
   )
 }
-
 export default project
